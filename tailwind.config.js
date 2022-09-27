@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "navlogo" : "url('/src/assets/logo.png')",
-        "phone-header" : "url('/public/assets/phone-header.png')",
+        "pfc" : "url('F:/work/letsflip_landingpage/src/assets/pfc.png')",
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif']

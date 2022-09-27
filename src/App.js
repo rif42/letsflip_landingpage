@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import PrivateClass from './components/PrivateClass';
 
 import './App.css';
 
@@ -22,7 +23,9 @@ function App(  ) {
         <div onClick={()=>{setNavState(7);console.log(navState)}} className="font-montserrat flex-none grow text-center pr-[1vw] mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"> Download Now </div>
       </div> 
 
-      <Home/>
+      <PrivateClass/>
+      
+      {/* <Home/> */}
 
       <Footer/>
       
