@@ -33,7 +33,7 @@ function Footer() {
             
           </div>
         </div>
-        <img className='flex justify-center content-center self-center max-w-[50%] px-[10vw]' src={require('../assets/qrcode.png')} alt={'qr code'}/>
+        <img className='flex justify-center content-center self-center max-w-[40%] px-[10vw]' src={require('../assets/qrcode.png')} alt={'qr code'}/>
       </div>
 
       {/* footer */}

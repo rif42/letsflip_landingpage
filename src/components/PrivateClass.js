@@ -1,4 +1,5 @@
 import React from 'react'
+import Gradient from 'rgt'
 
 function PrivateClass() {
   return (
@@ -21,26 +22,52 @@ function PrivateClass() {
           </div>
         </div>
       </div>
-      <div className='first-letter:flex h-[50vw] bg-white flex-col'>
-        <div className='spcbg mt-[17vw] ml-[28vw] align-center w-fit h-fit'>
-        {/* bg-gradient-to-r from-[#FC5229] to-[#AF067D] */}
-            {/* <h2 className='spctext absolute font-extrabold text-[5vw] text-black'>
+      <div className='first-letter:flex h-[21vw] flex-col'>
+        <div className='mt-[13vw] ml-[26vw] align-center w-fit h-fit'>
+          
+          <h2 className= 'absolute text-left text-[6vw] font-extrabold z-[1] pl-[1vw]'>
+              <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
                 HOW <br></br>
                 IT WORKS
-            </h2> */}
-            {/* <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                <text style="fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 14.2px; font-weight: 700;" transform="matrix(6.387061, 0, 0, 6.387061, -67.117386, -26.365225)">
-                    <tspan x="12.459" y="17.609">HOW</tspan><tspan x="12.459" dy="1em">​</tspan>
-                    <tspan>IT WORKS</tspan>
-                </text>
-            </svg> */}
+              </Gradient>
+          </h2>
+          <p style={{"text-shadow": "-1px -1px 0 #CD324C,1px -1px 0 #CD324C,-1px 1px 0 #CD324C, 1px 1px 0 #CD324C"}} 
+            className='absolute text-left text-[6vw] font-extrabold mt-[1vw] text-white'>
+            HOW <br></br>
+            IT WORKS
+          </p>
         </div>
-
       </div>
 
+      <div className='h-[40vw] flex flex-col'>
+        <img className='absolute ml-[24vw] mt-[4vw] w-[17vw] h-[20vw]' src={require('../assets/hiw-vector-3.png')} alt={'arrowdown'}/>
+        <h2 className= 'text-right text-[5vw] font-extrabold text-black pr-[10vw]'>
+          CREATE MISSION
+        </h2>
+        <p className='font-montserrat text-right text-black text-[1.2vw] leading-tight font-light pr-[10vw] pl-[40vw]'>
+        Ask the right questions and you will receive thought-provoking answers. Create and ask question-based missions to boost creative & collaborative open-ended responses. There are multiple-choice questions, learning journeys, and collaborations. 
+        </p>
 
+        <h2 className= 'text-left text-[5vw] font-extrabold text-black pl-[15vw] pt-[9vw]'>
+          SHARE
+        </h2>
+        <p className='font-montserrat text-left text-black text-[1.2vw] leading-tight font-light pl-[15vw] pr-[55vw]'>
+        Share missions with anyone. Only people with a special code will be able to enter a classroom and complete the missions. You can even upload images of people you collaborated with so the recognition is given where due.
+        </p>
+      </div>
+      <div className='h-[40vw] bg-green-300 flex flex-col'>
+        <img className='absolute w-[32vw] h-[21vw] ml-[48vw] mt-[-10vw]' src={require('../assets/hiw-vector-4.png')} alt={'arrowdown'}/>
+        <img className='absolute w-[30vw] h-[25vw] ml-[50vw] mt-[-25vw]' src={require('../assets/hiw-dave.png')} alt={'letsflip profile'}/>
+
+        <h2 className= 'text-right text-[5vw] font-extrabold text-black pt-[10vw] pr-[10vw]'>
+          RESPOND
+        </h2>
+        <p className='font-montserrat text-right text-black text-[1.2vw] leading-tight font-light pl-[53vw] pr-[10vw]'>
+          Once it is live, just watch the magic unfold and receive unique responses. Watch students solve problems in a collaborative learning environment that inspires their creativity.
+        </p>
+      </div>
+      
     </div>
-    
   )
 }
 
