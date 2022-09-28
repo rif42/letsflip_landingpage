@@ -23,9 +23,9 @@ function App(  ) {
         <div onClick={()=>{setNavState(7);console.log(navState)}} className="font-montserrat flex-none grow text-center pr-[1vw] mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"> Download Now </div>
       </div> 
 
-      <PrivateClass/>
+      {/* <PrivateClass/> */}
       
-      {/* <Home/> */}
+      <Home/>
 
       <Footer/>
       
