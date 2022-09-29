@@ -75,11 +75,11 @@ function MeetTheTeam() {
           name="Haidar"
           role="Developer Team Lead"
           bio="As a professional web developer, Haidar is always up for a challenge because it pushes him to be a better leader and problem solver. When he has free time, he enjoys playing futsal regularly, and other times, he takes time to learn new technology. Haidar is a cat lover who adopts, fosters and even feeds stray cats everyday."
-          li=""
-          fb=""
-          ig=""
-          wa=""
-          email=""
+          li="https://www.linkedin.com/in/haidar-rais-abdillah-896007157"
+          fb="https://www.facebook.com/Haidar0Rais"
+          ig="http://instagram.com/haidarrais_"
+          wa="http://wa.me/681272964751"
+          email="mailto:haidarrais@scorecampus.com"
         />
 
         <StaffCard
