@@ -1,6 +1,5 @@
 import React from "react";
 import StaffCard from "./StaffCard";
-import Gradient from "rgt";
 
 function MeetTheTeam() {
   return (

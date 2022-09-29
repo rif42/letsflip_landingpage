@@ -1,6 +1,5 @@
 import React from "react";
 import App from "../App";
-import Navbar from "./Navbar";
 
 function Home() {
   return (
@@ -99,7 +98,7 @@ function Home() {
             the world. There are classrooms everywhere.
           </p>
           <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw]">
-            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
+            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
               Learn More
             </div>
           </div>
@@ -134,7 +133,7 @@ function Home() {
           </p>
 
           <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-end rounded-xl px-[3vw] mt-[3vw] w-fit h-[3vw]">
-            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
+            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
               Learn More
             </div>
           </div>

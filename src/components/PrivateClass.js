@@ -195,7 +195,7 @@ function PrivateClass() {
         </p>
 
         <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mx-[5vw] w-fit h-[3vw]">
-          <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat  text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
+          <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat  text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
             Upgrade now
           </div>
         </div>
