@@ -9,7 +9,7 @@ function MasterClass() {
           src={require("../assets/mc-header-phone.png")}
           alt={"mcphone"}
         />
-        <h1 className="align-center text-right pr-[5vw] text-[5vw] leading-tight font-extrabold text-white">
+        <h1 className="font-montserrat align-center text-right pr-[5vw] text-[5vw] leading-tight font-extrabold text-white">
           MASTER<br></br>CLASSROOM
         </h1>
         <p className="font-montserrat py-[2vw] text-white text-[1.2vw] text-right pr-[5vw] leading-tight font-light">
@@ -27,10 +27,10 @@ function MasterClass() {
       </div>
 
       <div className="h-[35vw] w-full flex flex-col ">
-        <h2 className="align-center text-right pr-[5vw] pl-[50vw] pt-[5vw] text-[3.5vw] leading-tight font-extrabold text-black">
+        <h2 className="font-montserrat align-center text-right pr-[5vw] pl-[50vw] pt-[5vw] text-[3.5vw] leading-tight font-extrabold text-black">
           Master Classroom is an upgraded version of Private Classroom.
         </h2>
-        <p className="font-montserrat pt-[10vw] text-black text-[2vw] text-center px-[15vw] font-bold">
+        <p className="font-montserrat pt-[10vw] text-black text-[2vw] text-center px-[15vw] font-medium">
           Though the functions are similar, this{" "}
           <span className=" outline outline-[#cc0e2e] rounded-lg">
             next level feature
@@ -63,7 +63,7 @@ function MasterClass() {
         <h2 className="align-center text-left px-[25vw] pt-[5vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Based on the points received, you will be able to win rewards
         </h2>
-        <p className="font-montserrat text-black text-[2vw] align-center text-left px-[25vw] pt-[2vw] font-bold">
+        <p className="font-montserrat text-black text-[2vw] align-center text-left px-[25vw] pt-[2vw] font-medium">
           Rewards will motivate users to continuously participate with the
           missions and responses.
         </p>
@@ -71,7 +71,7 @@ function MasterClass() {
         <h2 className="align-center text-right pt-[15vw] pr-[10vw] pl-[30vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Master Classroom is an excellent platform for influencers
         </h2>
-        <p className="font-montserrat text-black text-[2vw] align-center text-right pt-[2vw] pr-[10vw] pl-[30vw] font-bold">
+        <p className="font-montserrat text-black text-[2vw] align-center text-right pt-[2vw] pr-[10vw] pl-[30vw] font-medium">
           to promote themselves as well as<br></br>
           larger businesses to advertise. Fans will then<br></br>
           be inspired to purchase these classrooms.

@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         pfc: "url('/src/assets/pfc.png')",
+        bgpartner: "url('/src/assets/bgpartner.png')",
         navlogo: "url('/src/assets/logo.png')",
         linkedin: "url('/src/assets/li.png')",
         fb: "url('/src/assets/fb.png')",

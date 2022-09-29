@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import PrivateClass from "./components/PrivateClass";
 import MasterClass from "./components/MasterClass";
 import MeetTheTeam from "./components/MeetTheTeam";
+import Partner from "./components/Partner";
 
 import "./App.css";
 
@@ -54,14 +55,14 @@ function App() {
         >
           Meet The Team
         </div>
-        {/* <div
+        <div
           onClick={() => {
-            setNavState("Partners");
+            setNavState("Partner");
           }}
           className="font-montserrat flex-none grow text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
         >
           Partners
-        </div> */}
+        </div>
         <a
           className="font-montserrat flex-none grow text-center pr-[1vw] mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
           href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US"
@@ -75,6 +76,7 @@ function App() {
       {navState === "PrivateClass" ? <PrivateClass /> : null}
       {navState === "MasterClass" ? <MasterClass /> : null}
       {navState === "MeetTheTeam" ? <MeetTheTeam /> : null}
+      {navState === "Partner" ? <Partner /> : null}
 
       <Footer />
     </div>
