@@ -7,7 +7,7 @@ function Home() {
     <div>
       {/* banner1 */}
       <div className="banner1 h-[35vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D]">
-        <h1 className="text-center px-[22vw] pt-[1vw] text-[3.5vw] leading-tight font-extrabold text-white">
+        <h1 className="font-montserrat text-center px-[22vw] pt-[1vw] text-[3.5vw] leading-tight font-extrabold text-white">
           {" "}
           TURN THE WORLD INTO YOUR CLASSROOM & LET YOUR VOICES BE HEARD{" "}
         </h1>
@@ -89,17 +89,17 @@ function Home() {
       {/* banner3 */}
       <div className="banner3 h-[40vw] w-full flex flex-row align-middle justify-end">
         <div className="font-monserrat text-left w-[40vw] pr-[10vw] pt-[5vw] flex-row align-middle">
-          <h2 className="font-extrabold text-black text-[3vw] leading-snug tracking-tight">
+          <h2 className="font-montserrat font-extrabold text-black text-[3vw] leading-snug tracking-tight">
             THE WORLD’S FIRST AUTHENTIC MOBILE LEARNING APP
           </h2>
-          <p className="font-montserrat pt-[1vw] text-black text-[1.1vw] leading-tight font-light">
+          <p className="font-montserrat pt-[1vw] text-black text-[1.1vw] leading-tight">
             It is all about you in Let’s Flip! Your mission is to come up with
             the most accurate, creative and innovative responses and solutions
             to the questions posted by the world out there. Look up and look at
             the world. There are classrooms everywhere.
           </p>
           <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw]">
-            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat font-light text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
+            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
               Learn More
             </div>
           </div>
@@ -120,8 +120,8 @@ function Home() {
           src={require("../assets/banner4.png")}
           alt={"banner4"}
         />
-        <div className="font-monserrat px-[7vw] h-full text-right flex flex-col align-middle pt-[10%] items-end">
-          <h2 className="font-extrabold text-black text-[4vw] leading-snug tracking-tight">
+        <div className="px-[7vw] h-full text-right flex flex-col align-middle pt-[10%] items-end">
+          <h2 className="font-montserrat font-extrabold text-black text-[4vw] leading-snug tracking-tight">
             ASK A QUESTION
           </h2>
           <p className="font-montserrat pt-[3vw] text-black text-[1.4vw] leading-tight tracking-tight">
@@ -134,7 +134,7 @@ function Home() {
           </p>
 
           <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-end rounded-xl px-[3vw] mt-[3vw] w-fit h-[3vw]">
-            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat font-light text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
+            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
               Learn More
             </div>
           </div>
@@ -145,7 +145,7 @@ function Home() {
 
       {/* banner5 */}
       <div className="banner5 h-[60vw] w-full flex flex-col align-middle justify-center">
-        <h2 className="font-extrabold text-black text-[4vw] leading-snug tracking-tight">
+        <h2 className="font-montserrat font-extrabold text-black text-[4vw] leading-snug tracking-tight">
           JOIN CLASSROOMS
         </h2>
         <p className="font-montserrat text-black text-center justify-center text-[1.1vw] px-[20vw] leading-tight tracking-tight">
@@ -161,7 +161,7 @@ function Home() {
           alt={"joinclassroom"}
         />
         <div className="flex-row inline-flex justify-center items-center align-middle px-[18vw] pt-[1vw]">
-          <h2 className="font-extrabold text-black text-right text-[4vw] leading-snug tracking-tight px-[3vw]">
+          <h2 className="font-montserrat font-extrabold text-black text-right text-[4vw] leading-snug tracking-tight px-[3vw]">
             BUILD A COMMUNITY
           </h2>
           <p className="font-montserrat text-black text-left justify-center align-middle text-[1.1vw] leading-tight tracking-tight">

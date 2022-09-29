@@ -6,7 +6,7 @@ function Footer() {
       {/* footer */}
       <div className="footer h-[25vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D] inline-flex flex-row justify-center align-middle">
         <div className="flex flex-col justify-center align-middle px-[10vw]">
-          <h2 className="font-extrabold text-white text-left text-[4vw] leading-snug tracking-tight">
+          <h2 className="font-montserrat font-extrabold text-white text-left text-[4vw] leading-snug tracking-tight">
             HAVE FUN!
           </h2>
           <p className="font-montserrat text-WHITE text-left text-white font-light justify-center align-middle text-[1.4vw] leading-tight tracking-tight">
