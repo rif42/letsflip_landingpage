@@ -85,33 +85,33 @@ function MeetTheTeam() {
           name="Rifky"
           role="Front-end Developer"
           bio="Being a front-end developer means being able to see the direct results of what you’re coding on the website. In Rifky’s eyes, he feels like he is “painting a picture with poetry” when he does this. Besides being an avid gamer, he believes that the secret of life is balance. This mindset has made him who he is today. "
-          li=""
+          li="https://www.linkedin.com/in/rifky-ariya-4206ba156/"
           fb=""
           ig=""
-          wa=""
-          email=""
+          wa="http://wa.me/681216351929"
+          email="mailto:rifky@scorecampus.com"
         />
 
         <StaffCard
           name="Khoirul"
           role="Back-end Developer"
           bio="As a back-end developer, it's appropriate that he likes things that train logic and algorithms. Besides his profile which is very addicted to technology, he really likes sports, he likes to play football even though his body is not suited for sport."
-          li=""
+          li="https://www.linkedin.com/in/khoirul-badarudin-8a8a99183/"
           fb=""
-          ig=""
-          wa=""
-          email=""
+          ig="https://www.instagram.com/khoirul_bads/"
+          wa="https://www.instagram.com/khoirul_bads/"
+          email="mailto:khoirul@scorecampus.com"
         />
 
         <StaffCard
           name="Imam Daru"
           role="Back-end Developer"
           bio="When there’s nothing much to do, you can find Imam working on his programming skills, reading, or even traveling. His indomitable spirit inspires him to constantly work on developing himself. Imam is also known to have a spontaneous and adventurous persona."
-          li=""
+          li="https://www.linkedin.com/in/imam-daru-rismi-600747212"
           fb=""
-          ig=""
-          wa=""
-          email=""
+          ig="https://www.instagram.com/daaru.r/"
+          wa="http://wa.me/6281275433320"
+          email="mailto:imam@scorecampus.com"
         />
       </div>
     </div>

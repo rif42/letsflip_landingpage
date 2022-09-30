@@ -5,6 +5,7 @@ import PrivateClass from "./components/PrivateClass";
 import MasterClass from "./components/MasterClass";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Partner from "./components/Partner";
+import Gradient from "rgt"; 
 
 import "./App.css";
 
@@ -13,13 +14,27 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Navbar-container flex-row inline-flex justify-even w-full h-23">
-        <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo w-20 h-20 pl-[15vw]"></div>
+      <div className="Navbar-container align-middle place-content-center place-items-center flex-row inline-flex justify-even w-full h-23">
+        <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo w-[15vw] h-20 pl-[15vw]"></div>
+        <div
+          onClick={() => {
+            setNavState("Event");
+          }}
+          className={navState === "Event" 
+          ? "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+        >
+          <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
+              Event
+          </Gradient>
+        </div>
         <div
           onClick={() => {
             setNavState("Home");
           }}
-          className="font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          className={navState === "Home" 
+          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
         >
           Home
         </div>
@@ -27,7 +42,9 @@ function App() {
           onClick={() => {
             setNavState("PrivateClass");
           }}
-          className="font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          className={navState === "PrivateClass" 
+          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
         >
           Private Classroom
         </div>
@@ -35,7 +52,9 @@ function App() {
           onClick={() => {
             setNavState("MasterClass");
           }}
-          className="font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          className={navState === "MasterClass" 
+          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
         >
           Master Classroom
         </div>
@@ -51,7 +70,9 @@ function App() {
           onClick={() => {
             setNavState("MeetTheTeam");
           }}
-          className="font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          className={navState === "MeetTheTeam" 
+          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
         >
           Meet The Team
         </div>
@@ -59,15 +80,17 @@ function App() {
           onClick={() => {
             setNavState("Partner");
           }}
-          className="font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer pr-[2vw]"
+          className={navState === "Partner" 
+          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
+          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
         >
           Partners
         </div>
         <a
-          className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center justify-center align-middle rounded-xl mr-[15vw] mb-[-0.3vw] px-[3vw] w-fit h-[3vw]"
+          className="flex  hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] mb-[-0.3vw] px-[3vw] w-fit h-[3vw]"
           href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US"
         >
-          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.95vw] w-[10vw] h-[2.86vw]">
+          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
             Download Now
           </div>
         </a>

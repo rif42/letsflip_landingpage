@@ -3,13 +3,13 @@ import React from "react";
 function Partner() {
   return (
     <div>
-      <div className="h-[35vw] w-full bg-pfc bg-no-repeat bg-center bg-cover flex flex-col align-middle justify-center z-10">
         <img
-          className="absolute flex place-self-center mt-[-8.65vw]"
+          className="flex absolute left-[25%]"
           src={require("../assets/partnerheader.png")}
           alt={"create mission"}
         />
-        <h1 className="font-montserrat align-center text-center px-[5vw] text-[5vw] leading-tight font-extrabold text-white">
+      <div className="h-[35vw] w-full bg-pfc bg-no-repeat bg-center bg-cover flex flex-col align-middle justify-center z-10">
+        <h1 className="font-montserrat align-center text-center px-[5vw] text-[5vw] pt-[5vw] leading-tight font-extrabold text-white">
           #TOGETHERSTRONGER
         </h1>
         <p className="font-montserrat py-[1vw] text-white text-[1.5vw] text-center px-[5vw] leading-tight">
