@@ -5,6 +5,7 @@ import PrivateClass from "./components/PrivateClass";
 import MasterClass from "./components/MasterClass";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Partner from "./components/Partner";
+import Event from "./components/Event";
 import Gradient from "rgt"; 
 
 import "./App.css";
@@ -104,6 +105,7 @@ function App() {
         </a> */}
       </div>
 
+      {navState === "Event" ? <Event /> : null}
       {navState === "Home" ? <Home /> : null}
       {navState === "PrivateClass" ? <PrivateClass /> : null}
       {navState === "MasterClass" ? <MasterClass /> : null}

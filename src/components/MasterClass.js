@@ -61,7 +61,7 @@ function MasterClass() {
           src={require("../assets/Giftbox7.png")}
           alt={"giftbox7"}
         />
-        <h2 className="align-center text-left px-[25vw] pt-[5vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
+        <h2 className="font-montserrat align-center text-left px-[25vw] pt-[5vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Based on the points received, you will be able to win rewards
         </h2>
         <p className="font-montserrat text-black text-[2vw] align-center text-left px-[25vw] pt-[2vw] font-medium">
@@ -69,7 +69,7 @@ function MasterClass() {
           missions and responses.
         </p>
 
-        <h2 className="align-center text-right pt-[15vw] pr-[10vw] pl-[30vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
+        <h2 className="font-montserrat align-center text-right pt-[15vw] pr-[10vw] pl-[30vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Master Classroom is an excellent platform for influencers
         </h2>
         <p className="font-montserrat text-black text-[2vw] align-center text-right pt-[2vw] pr-[10vw] pl-[30vw] font-medium">
@@ -88,7 +88,7 @@ function MasterClass() {
         </p>
 
         <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mx-[5vw] w-fit h-[3vw]">
-          <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat font-light text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
+          <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
             Upgrade now
           </div>
         </div>
