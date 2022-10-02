@@ -6,7 +6,7 @@ import MasterClass from "./components/MasterClass";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Partner from "./components/Partner";
 import Event from "./components/Event";
-import Gradient from "rgt"; 
+import Gradient from "rgt";
 
 import "./App.css";
 
@@ -21,21 +21,25 @@ function App() {
           onClick={() => {
             setNavState("Event");
           }}
-          className={navState === "Event" 
-          ? "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "Event"
+              ? "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-bold flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
-              Event
+            Event
           </Gradient>
         </div>
         <div
           onClick={() => {
             setNavState("Home");
           }}
-          className={navState === "Home" 
-          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "Home"
+              ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           Home
         </div>
@@ -43,9 +47,11 @@ function App() {
           onClick={() => {
             setNavState("PrivateClass");
           }}
-          className={navState === "PrivateClass" 
-          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "PrivateClass"
+              ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           Private Classroom
         </div>
@@ -53,9 +59,11 @@ function App() {
           onClick={() => {
             setNavState("MasterClass");
           }}
-          className={navState === "MasterClass" 
-          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "MasterClass"
+              ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           Master Classroom
         </div>
@@ -71,9 +79,11 @@ function App() {
           onClick={() => {
             setNavState("MeetTheTeam");
           }}
-          className={navState === "MeetTheTeam" 
-          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "MeetTheTeam"
+              ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           Meet The Team
         </div>
@@ -81,17 +91,19 @@ function App() {
           onClick={() => {
             setNavState("Partner");
           }}
-          className={navState === "Partner" 
-          ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400" 
-          : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"}
+          className={
+            navState === "Partner"
+              ? "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+              : "font-montserrat font-medium flex text-center mx-auto my-auto text-[0.9vw] tracking-wide text-black cursor-pointer"
+          }
         >
           Partners
         </div>
         <a
-          className="flex  hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] mb-[-0.3vw] px-[3vw] w-fit h-[3vw]"
+          className="flex  hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] px-[3vw] w-fit h-[2.5vw]"
           href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US"
         >
-          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
+          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.3vw]">
             Download Now
           </div>
         </a>

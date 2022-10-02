@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       {/* banner1 */}
-      <div className="banner1 h-[35vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D]">
+      <div className="flex flex-col banner1 h-[34.9vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D]">
         <h1 className="font-montserrat text-center px-[22vw] pt-[1vw] text-[3.5vw] leading-tight font-extrabold text-white">
           {" "}
           TURN THE WORLD INTO YOUR CLASSROOM & LET YOUR VOICES BE HEARD{" "}
@@ -46,7 +46,7 @@ function Home() {
           </div>
         </div>
         <img
-          className="flex justify-center align-middle px-[15vw] py-[1vw]"
+          className="flex justify-end px-[15vw] py-[1vw]"
           src={require("../assets/phone-header.png")}
           alt={"phone header pic"}
         />
