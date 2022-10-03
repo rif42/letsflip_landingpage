@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Event() {
+  const [Toggle, setToggle] = useState(0);
   return (
     <div className="flex flex-col justify-center align-middle">
       <div className="flex flex-row align-middle w-full h-[50vw]">
@@ -60,7 +63,7 @@ function Event() {
             Lucky Draw - AirPods
           </p>
           <p className="font-montserrat absolute flex mt-[43vw] text-white text-[0.9vw] h-[1.4vw] px-2 tracking-wide text-center font-medium">
-            Sony Playstaton 5 Nintendo Switch Airpods JBL Speakers And more…
+            Sony Playstation 5 Nintendo Switch Airpods JBL Speakers And more…
           </p>
           <img
             className="absolute flex justify-center align-middle place-self-center w-[18%] mt-[-5vw]"
@@ -85,49 +88,85 @@ function Event() {
         </div>
       </div>
 
-      <div className="flex flex-row align-middle w-full bg-ussbg4 bg-cover bg-no-repeat bg-center h-[30vw]">
-        <div className="flex align-middle justify-center place-items-center w-[50%]">
-          <h2 className="font-montserrat ml-[8vw] text-right  text-white text-[5vw] leading-tight tracking-tight font-extrabold">
-            LET'S FLIP <br></br> BRINGS A <br></br> NEW <br></br> DIMENSION
-          </h2>
-        </div>
-        <div className="flex flex-col align-middle justify-center place-items-center w-[50%]">
-          <img
-            className="flex  place-self-start w-[80%]"
-            src={require("../assets/dino.jpg")}
-            alt={"dinosaur"}
-          />
-          <p className="font-montserrat text-white text-[0.9vw] pt-[1vw] pr-[10vw] tracking-wide align-center text-left font-medium">
-            to learning journeys and competitions in Singapore. With the
-            increase usage of online learning and EdTech solutions, there has
-            been a need to create a learning journey experience for the students
-            to look forward to during the holidays. Not just a day of fun, but
-            also going through an in depth of their learning experience will be
-            provided.
-          </p>
-        </div>
-      </div>
+      <div className="slidey overflow-hidden h-[30vw] relative">
+        <motion.div
+          onClick={Toggle ? () => setToggle(0) : () => setToggle(1)}
+          // initial={{ x: "100%" }}
+          animate={{ ease: "linear", type: "Tween", duration: 3 }}
+          className="flex absolute flex-row align-middle w-full bg-ussbg4 bg-cover bg-no-repeat bg-center h-[30vw]"
+        >
+          <div className="flex align-middle justify-center place-items-center w-[50%]">
+            <h2 className="font-montserrat ml-[8vw] text-right  text-white text-[5vw] leading-tight tracking-tight font-extrabold">
+              LET'S FLIP <br></br> BRINGS A <br></br> NEW <br></br> DIMENSION
+            </h2>
+          </div>
+          <div className="flex flex-col align-middle justify-center place-items-center w-[50%]">
+            <img
+              className="flex  place-self-start w-[80%]"
+              src={require("../assets/dino.jpg")}
+              alt={"dinosaur"}
+            />
+            <p className="font-montserrat text-white text-[0.9vw] pt-[1vw] pr-[10vw] tracking-wide align-center text-left font-medium">
+              to learning journeys and competitions in Singapore. With the
+              increase usage of online learning and EdTech solutions, there has
+              been a need to create a learning journey experience for the
+              students to look forward to during the holidays. Not just a day of
+              fun, but also going through an in depth of their learning
+              experience will be provided.
+            </p>
+          </div>
+        </motion.div>
 
-      <div className="flex flex-row w-full bg-ussbg4 bg-cover bg-no-repeat bg-center h-[30vw]">
-        <div className="flex flex-col align-bottom justify-center ml-[7vw] w-[50%]">
-          <img
-            className="flex place-self-start w-[80%]"
-            src={require("../assets/elmo.jpg")}
-            alt={"elmo statue"}
+        <motion.div
+          onClick={Toggle ? () => setToggle(0) : () => setToggle(1)}
+          animate={Toggle ? { x: "100vw" } : { x: "0" }}
+          transition={{ type: "Tween", stiffness: 100, duration: 1 }}
+          className="flex absolute flex-row w-full bg-ussbg4 bg-cover bg-no-repeat bg-center h-[30vw]"
+        >
+          <div className="flex flex-col align-bottom justify-center ml-[7vw] w-[50%]">
+            <img
+              className="flex place-self-start w-[80%]"
+              src={require("../assets/elmo.jpg")}
+              alt={"elmo statue"}
+            />
+            <p className="font-montserrat text-white text-[0.9vw] pt-[1vw] pr-[10vw] tracking-wide align-center text-right font-medium">
+              This element will be essential to working towards a positive
+              learning environment. WIth that, we are starting this journey
+              right here in Singapore with the very first Let’s Flip Universal
+              Studios SIngapore Learning Journey
+            </p>
+          </div>
+          <div className="flex flex-col justify-center w-[50%]">
+            <h2 className="font-montserrat ml-[-4vw] text-left place-self-start text-white text-[4vw] pr-[3vw] leading-none tracking-tight font-extrabold">
+              LET'S FLIP FOCUSES ON CONNECTING STUDENTS AROUND THE WORLD THROUGH
+              LEARNING
+            </h2>
+          </div>
+        </motion.div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-3 w-[10vw] top-[95%] absolute left-[43vw]"
+          viewBox="0 0 200 12"
+          fill="currentColor"
+        >
+          <line //plus icon
+            x1="0"
+            y1="0"
+            x2="100"
+            y2="0"
+            stroke={Toggle ? "white" : "black"}
+            strokeWidth={Toggle ? 6 : 3}
           />
-          <p className="font-montserrat text-white text-[0.9vw] pt-[1vw] pr-[10vw] tracking-wide align-center text-right font-medium">
-            This element will be essential to working towards a positive
-            learning environment. WIth that, we are starting this journey right
-            here in Singapore with the very first Let’s Flip Universal Studios
-            SIngapore Learning Journey
-          </p>
-        </div>
-        <div className="flex flex-col justify-center w-[50%]">
-          <h2 className="font-montserrat ml-[-4vw] text-left place-self-start text-white text-[4vw] pr-[3vw] leading-none tracking-tight font-extrabold">
-            LET'S FLIP FOCUSES ON CONNECTING STUDENTS AROUND THE WORLD THROUGH
-            LEARNING
-          </h2>
-        </div>
+          <line //plus icon part 2
+            x1="100"
+            y1="0"
+            x2="200"
+            y2="0"
+            stroke={Toggle ? "black" : "white"}
+            strokeWidth={Toggle ? 3 : 6}
+          />
+        </svg>
       </div>
 
       <div className="flex flex-col w-full h-[50vw]">

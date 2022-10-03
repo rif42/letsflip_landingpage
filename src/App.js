@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import PrivateClass from "./components/PrivateClass";

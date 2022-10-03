@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import App from "../App";
+import { motion } from "framer-motion";
 
 function Home() {
+  const [cardState, setCardState] = useState(1);
+
   return (
     <div>
       {/* banner1 */}
@@ -54,31 +57,72 @@ function Home() {
       {/* banner1 */}
 
       {/* banner2 */}
-      <div className="banner2 h-[45vw] w-full flex flex-row justify-between align-middle items-center">
+      <div className="banner2 h-[48vw] pt-[3vw] w-full flex flex-row justify-between align-middle items-center overflow-hidden">
         <img
-          className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
+          onClick={
+            cardState - 1 !== -1 ? () => setCardState(cardState - 1) : {}
+          }
+          className="flex justify-center align-middle max-w-[100%] max-h-[100%] z-10"
           src={require("../assets/arrow-left.png")}
           alt={"arrowleft"}
         />
 
-        <img
-          className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
+        <motion.img
+          initial={{ x: 0 }}
+          animate={
+            cardState === 0
+              ? { x: "27vw" }
+              : cardState === 2
+              ? { x: "-30vw" }
+              : { x: 0 }
+          }
+          className={
+            cardState === 0
+              ? "flex justify-center align-middle w-[22vw]"
+              : "flex justify-center align-middle w-[15vw] opacity-70"
+          }
           src={require("../assets/iphone-left.png")}
           alt={"iphone left"}
         />
-        <img
-          className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
+        <motion.img
+          initial={{ x: 0 }}
+          animate={
+            cardState === 0
+              ? { x: "27vw" }
+              : cardState === 2
+              ? { x: "-27vw" }
+              : {}
+          }
+          className={
+            cardState === 1
+              ? "flex justify-center align-middle w-[21vw]"
+              : "flex justify-center align-middle w-[15vw] opacity-70"
+          }
+          // className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
           src={require("../assets/iphone-center.png")}
           alt={"iphone center"}
         />
-        <img
-          className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
+        <motion.img
+          initial={{ x: 0 }}
+          animate={
+            cardState === 2
+              ? { x: "-27vw" }
+              : cardState === 0
+              ? { x: "30vw" }
+              : {}
+          }
+          className={
+            cardState === 2
+              ? "flex justify-center align-middle w-[22vw]"
+              : "flex justify-center align-middle w-[15vw] opacity-70"
+          }
           src={require("../assets/iphone-right.png")}
           alt={"iphone right"}
         />
 
         <img
-          className="flex justify-center align-middle max-w-[100%] max-h-[100%]"
+          onClick={cardState + 1 !== 3 ? () => setCardState(cardState + 1) : {}}
+          className="flex justify-center align-middle max-w-[100%] max-h-[100%] z-10"
           src={require("../assets/arrow-right.png")}
           alt={"arrowright"}
         />
@@ -102,7 +146,6 @@ function Home() {
               Learn More
             </div>
           </div>
-          {/* <button className='font-montserrat flex text-center text-black text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md'> Learn more </button> */}
         </div>
         <img
           className="flex"
@@ -133,11 +176,10 @@ function Home() {
           </p>
 
           <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-end rounded-xl px-[3vw] mt-[3vw] w-fit h-[3vw]">
-            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
+            <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.8vw]">
               Learn More
             </div>
           </div>
-          {/* <button className='font-montserrat flex text-center text-black text-[0.9vw] items-center align-middle rounded-xl px-[3vw] mt-[3vw] w-fit h-[3vw] shadow-gray-500 shadow-md'> Learn more </button> */}
         </div>
       </div>
       {/* banner4 */}
