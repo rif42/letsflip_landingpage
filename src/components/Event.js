@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Event() {
   const [Toggle, setToggle] = useState(0);
+  const [faq1, setfaq1] = useState(1);
+  const [faq2, setfaq2] = useState(0);
+  const [faq3, setfaq3] = useState(0);
+  const [faq4, setfaq4] = useState(0);
+  const [faq5, setfaq5] = useState(0);
+
   return (
     <div className="flex flex-col justify-center align-middle">
       <div className="flex flex-row align-middle w-full h-[50vw]">
@@ -25,9 +30,9 @@ function Event() {
               USS
             </span>
           </h2>
-          <p className="font-montserrat pl-[5vw] pr-[10vw] pt-[1vw]  text-black text-[1.1vw] align-center text-left font-medium">
-            Your missions, if you choose to accept is to flip USS Join us this
-            coming December for the first ever Let’s Flip USS competition
+          <p className="font-montserrat pl-[5vw] pr-[10vw] pt-[1vw]  text-black text-[1.1vw] align-center text-left font-semibold">
+            Your missions, if you choose to accept, is to flip USS! Join us this
+            December for the first ever Let’s Flip USS competition
           </p>
           <div className="flex font-montserrat text-[1.1vw] font-medium text-white ml-[5vw] w-[10vw] py-[0.3vw] mt-[1vw] flex-row text-center place-content-center place-items-center align-middle bg-[#FF0030] hover:cursor-pointer">
             Register now!
@@ -44,8 +49,8 @@ function Event() {
 
       <div className="flex flex-row align-middle w-full bg-ussbg2 bg-cover bg-no-repeat bg-center h-[50vw]">
         <div className="flex flex-col justify-center align-middle w-[50%]">
-          <h2 className="font-montserrat align-center text-center text-white text-[8vw] leading-tight tracking-tight font-extrabold">
-            $5000
+          <h2 className="font-montserrat align-center text-center text-white text-[4vw] leading-tight tracking-tight font-extrabold">
+            OUTSTANDING PRIZES
           </h2>
           <p className="font-montserrat  text-white text-[1.1vw] align-center text-center font-medium">
             W O R T H <span className="invisible">-</span> O F{" "}
@@ -59,11 +64,11 @@ function Event() {
           </p>
         </div>
         <div className="flex align-middle w-[50%]">
-          <p className="font-montserrat absolute flex justify-center align-middle place-self-center ml-[21.5vw] mt-[3vw] bg-gray-400 text-black text-[0.9vw] h-[1.4vw] px-2 tracking-wide align-center text-center font-medium">
-            Lucky Draw - AirPods
+          <p className="font-montserrat absolute flex justify-center align-middle place-self-center w-[13vw] ml-[20.5vw] mt-[3vw] bg-gray-300 text-black text-[0.9vw] h-[1.4vw] tracking-wide align-center text-center font-medium">
+            Lucky Draw - AirPods Pro
           </p>
           <p className="font-montserrat absolute flex mt-[43vw] text-white text-[0.9vw] h-[1.4vw] px-2 tracking-wide text-center font-medium">
-            Sony Playstation 5 Nintendo Switch Airpods JBL Speakers And more…
+            Sony Playstation 5, Nintendo Switch, JBL Speakers And more…
           </p>
           <img
             className="absolute flex justify-center align-middle place-self-center w-[18%] mt-[-5vw]"
@@ -81,7 +86,7 @@ function Event() {
             alt={"switch"}
           />
           <img
-            className="absolute flex justify-center align-middle place-self-center w-[18%] ml-[18vw] mt-[-8vw]"
+            className="absolute flex justify-center align-middle place-self-center w-[12%] ml-[21vw] mt-[-8vw]"
             src={require("../assets/airpod.png")}
             alt={"airpod"}
           />
@@ -130,10 +135,10 @@ function Event() {
               alt={"elmo statue"}
             />
             <p className="font-montserrat text-white text-[0.9vw] pt-[1vw] pr-[10vw] tracking-wide align-center text-right font-medium">
-              This element will be essential to working towards a positive
-              learning environment. WIth that, we are starting this journey
-              right here in Singapore with the very first Let’s Flip Universal
-              Studios SIngapore Learning Journey
+              This dimension is essential in working towards a positive and
+              innovative learning environment. This exciting and authentic
+              learning journey begins with The World's First Let's Flip
+              Universal Studios Singapore Experience.
             </p>
           </div>
           <div className="flex flex-col justify-center w-[50%]">
@@ -171,15 +176,16 @@ function Event() {
 
       <div className="flex flex-col w-full h-[50vw]">
         <p className="font-montserrat pt-[3vw] pb-[1vw] text-[#FF0030] text-[2vw] align-center text-center font-bold">
-          STUDENTS AGED 12-17 YEARS OLD
+          STUDENTS AGED 11-17 YEARS OLD
         </p>
         <h2 className="font-montserrat text-center text-black text-[5.5vw] px-[10vw] leading-none tracking-tight font-extrabold">
           WILL BE INVITED TO JOIN US ON THIS JOURNEY
         </h2>
         <p className="font-montserrat px-[15vw] pt-[1vw] pb-[3vw] text-black text-[1.1vw] align-center text-center font-bold">
-          You will be going through a series of missions in Universal Studios
-          Singapore and the judges will grade your response. You bring out your
-          competitive spirit, because there will be attractive prizes to be won!
+          Your mission will push you to think outside the box. Your responses
+          have to be accurate, crisp, original and creative. Your thought
+          proccess is key to your victory as there are many attractive prizes to
+          be won.
         </p>
         <img
           className="w-full"
@@ -192,10 +198,10 @@ function Event() {
           THE STUDENTS THAT BEST EXEMPLIFY CREATIVITY
         </h2>
         <p className="font-montserrat pt-[1vw] px-[12vw] text-black text-[1.1vw] align-center text-center font-bold">
-          confidence and clarity - displaying an ability to present their
-          response in a way that is easy to understand - portraying
-          knowledgeable content - will win the first Let’s Flip Universal
-          Studios Singapore competition.
+          confidence, clarity, displaying the ability to present your response
+          that is easy to understand, showing content knowledge, and a touch of
+          comic genius, will win the first Let’s Flip Universal Studios
+          Singapore competition.
         </p>
         <div className="flex font-montserrat place-self-center place-content-center text-[1.1vw] mt-[3vw] font-medium text-white w-[10vw] bg-[#FF0030] hover:cursor-pointer">
           Register now!
@@ -224,12 +230,12 @@ function Event() {
         </div>
         <div className="flex flex-col bg-g3 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
           <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
-            RESPOND TO MISSION
+            RESPOND TO MISSIONS
           </p>
         </div>
         <div className="flex flex-col bg-g4 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
           <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
-            RECORD YOUR VIDEO
+            RECORD YOUR VIDEOS
           </p>
         </div>
         <div className="flex flex-col bg-g5 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
@@ -237,9 +243,14 @@ function Event() {
             EDIT WHAT YOU HAVE TAKEN
           </p>
         </div>
+        <div className="flex flex-col bg-g9 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
+          <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
+            DONT FORGET YOUR LEARNING JOURNEY
+          </p>
+        </div>
         <div className="flex flex-col bg-g6 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
           <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
-            UPLOAD MISSION
+            UPLOAD MISSIONS
           </p>
         </div>
         <div className="flex flex-col bg-g7 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
@@ -250,11 +261,6 @@ function Event() {
         <div className="flex flex-col bg-g8 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
           <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
             WIN YOUR PRIZES
-          </p>
-        </div>
-        <div className="flex flex-col bg-g9 bg-center bg-no-repeat bg-cover place-content-end text-left w-[20vw] h-[25vw] m-[1vw] hover:cursor-pointer">
-          <p className="font-montserrat text-white text-[2vw] px-[1vw] pb-[1vw] leading-tight tracking-tight font-extrabold">
-            DONT FORGET YOUR LEARNING JOURNEY
           </p>
         </div>
       </div>
@@ -270,23 +276,26 @@ function Event() {
           Frequently asked Questions
         </h2>
         <div className="flex flex-row justify-between rounded-3xl border-[0.2vw] mx-[10vw] border-gray-400">
-          <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+          <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%] h-fit">
             <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
               How do I register for Let’s Flip USS learning journey?
             </p>
-            <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-              You can sign up from our registration page here. Availability is
-              on a first-come-first-served basis.
-            </p>
+            {faq1 ? (
+              <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                You can sign up from our registration page here. Availability is
+                on a first-come-first-served basis.
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center place-self-center align-middle w-[10%]">
             <svg
+              onClick={() => setfaq1(!faq1)}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-[1.5vw]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              <line //stripe line
+              <line //horizontal line = minus icon
                 x1="0"
                 y1="10"
                 x2="20"
@@ -294,23 +303,16 @@ function Event() {
                 stroke="black"
                 strokeWidth={3}
               />
-
-              {/* <line //plus icon
-                x1="0"
-                y1="10"
-                x2="20"
-                y2="10"
-                stroke="black"
-                strokeWidth={3}
-              />
-              <line //plus icon part 2
-                x1="10"
-                y1="0"
-                x2="10"
-                y2="20"
-                stroke="black"
-                strokeWidth={3}
-              /> */}
+              {faq1 ? null : (
+                <line //horizontal + vertical line = plus icon
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+              )}
             </svg>
           </div>
         </div>
@@ -320,28 +322,22 @@ function Event() {
             <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
               Is there only one date for the Let’s Flip USS Learning Journey?
             </p>
-            {/* <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-              You can sign up from our registration page here. Availability is
-              on a first-come-first-served basis.
-            </p> */}
+            {faq2 ? (
+              <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                You can sign up from our registration page here. Availability is
+                on a first-come-first-served basis.
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center place-self-center align-middle w-[10%]">
             <svg
+              onClick={() => setfaq2(!faq2)}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-[1.5vw]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              {/* <line //stripe line
-                x1="0"
-                y1="10"
-                x2="20"
-                y2="10"
-                stroke="black"
-                strokeWidth={3}
-              /> */}
-
-              <line //plus icon
+              <line //horizontal line = minus icon
                 x1="0"
                 y1="10"
                 x2="20"
@@ -349,14 +345,16 @@ function Event() {
                 stroke="black"
                 strokeWidth={3}
               />
-              <line //plus icon part 2
-                x1="10"
-                y1="0"
-                x2="10"
-                y2="20"
-                stroke="black"
-                strokeWidth={3}
-              />
+              {faq2 ? null : (
+                <line //horizontal + vertical line = plus icon
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+              )}
             </svg>
           </div>
         </div>
@@ -367,28 +365,22 @@ function Event() {
               If I have signed up for Let’s Flip USS Learning Journey in
               December 2022, can I sign up for the future ones again?
             </p>
-            {/* <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-              You can sign up from our registration page here. Availability is
-              on a first-come-first-served basis.
-            </p> */}
+            {faq3 ? (
+              <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                You can sign up from our registration page here. Availability is
+                on a first-come-first-served basis.
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center place-self-center align-middle w-[10%]">
             <svg
+              onClick={() => setfaq3(!faq3)}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-[1.5vw]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              {/* <line //stripe line
-                x1="0"
-                y1="10"
-                x2="20"
-                y2="10"
-                stroke="black"
-                strokeWidth={3}
-              /> */}
-
-              <line //plus icon
+              <line //horizontal line = minus icon
                 x1="0"
                 y1="10"
                 x2="20"
@@ -396,14 +388,16 @@ function Event() {
                 stroke="black"
                 strokeWidth={3}
               />
-              <line //plus icon part 2
-                x1="10"
-                y1="0"
-                x2="10"
-                y2="20"
-                stroke="black"
-                strokeWidth={3}
-              />
+              {faq3 ? null : (
+                <line //horizontal + vertical line = plus icon
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+              )}
             </svg>
           </div>
         </div>
@@ -413,28 +407,22 @@ function Event() {
             <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
               Will I be able to get my refund if my child cannot make it?
             </p>
-            {/* <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-              You can sign up from our registration page here. Availability is
-              on a first-come-first-served basis.
-            </p> */}
+            {faq4 ? (
+              <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                You can sign up from our registration page here. Availability is
+                on a first-come-first-served basis.
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center place-self-center align-middle w-[10%]">
             <svg
+              onClick={() => setfaq4(!faq4)}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-[1.5vw]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              {/* <line //stripe line
-                x1="0"
-                y1="10"
-                x2="20"
-                y2="10"
-                stroke="black"
-                strokeWidth={3}
-              /> */}
-
-              <line //plus icon
+              <line //horizontal line = minus icon
                 x1="0"
                 y1="10"
                 x2="20"
@@ -442,14 +430,16 @@ function Event() {
                 stroke="black"
                 strokeWidth={3}
               />
-              <line //plus icon part 2
-                x1="10"
-                y1="0"
-                x2="10"
-                y2="20"
-                stroke="black"
-                strokeWidth={3}
-              />
+              {faq4 ? null : (
+                <line //horizontal + vertical line = plus icon
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+              )}
             </svg>
           </div>
         </div>
@@ -460,28 +450,22 @@ function Event() {
               How will I know if I have successfully booked the learning
               journey?
             </p>
-            {/* <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-              You can sign up from our registration page here. Availability is
-              on a first-come-first-served basis.
-            </p> */}
+            {faq5 ? (
+              <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                You can sign up from our registration page here. Availability is
+                on a first-come-first-served basis.
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center place-self-center align-middle w-[10%]">
             <svg
+              onClick={() => setfaq5(!faq5)}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-[1.5vw]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
-              {/* <line //stripe line
-                x1="0"
-                y1="10"
-                x2="20"
-                y2="10"
-                stroke="black"
-                strokeWidth={3}
-              /> */}
-
-              <line //plus icon
+              <line //horizontal line = minus icon
                 x1="0"
                 y1="10"
                 x2="20"
@@ -489,21 +473,28 @@ function Event() {
                 stroke="black"
                 strokeWidth={3}
               />
-              <line //plus icon part 2
-                x1="10"
-                y1="0"
-                x2="10"
-                y2="20"
-                stroke="black"
-                strokeWidth={3}
-              />
+              {faq5 ? null : (
+                <line //horizontal + vertical line = plus icon
+                  x1="10"
+                  y1="0"
+                  x2="10"
+                  y2="20"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+              )}
             </svg>
           </div>
         </div>
 
-        <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[4vw] text-black font-medium hover:cursor-pointer">
-          More Frequently asked Questions
-        </p>
+        <a
+          className="flex flex-row justify-center place-self-center"
+          href="https://docs.google.com/document/d/1pNFxbFjLWG2-IpEMHQwRBLtJAJrF_HmOlt9NaZuSQgE"
+        >
+          <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[4vw] text-black font-medium hover:cursor-pointer">
+            More Frequently asked Questions
+          </p>
+        </a>
       </div>
     </div>
   );

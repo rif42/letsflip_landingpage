@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Navbar-container align-middle place-content-center place-items-center flex-row inline-flex justify-even w-full h-23">
-        <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo w-[15vw] h-20 pl-[15vw]"></div>
+      <div className="Navbar-container align-middle place-content-center place-items-center flex-row inline-flex justify-even w-full h-23 sticky top-0 bg-white z-50">
+        <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo bg-contain w-[15vw] h-[4.5vw] pl-[15vw]"></div>
         <div
           onClick={() => {
             setNavState("Event");
