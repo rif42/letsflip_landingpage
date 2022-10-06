@@ -8,6 +8,13 @@ function Event() {
   const [faq3, setfaq3] = useState(0);
   const [faq4, setfaq4] = useState(0);
   const [faq5, setfaq5] = useState(0);
+  const [faq6, setfaq6] = useState(0);
+  const [faq7, setfaq7] = useState(0);
+  const [faq8, setfaq8] = useState(0);
+  const [faq9, setfaq9] = useState(0);
+  const [faq10, setfaq10] = useState(0);
+  const [faq11, setfaq11] = useState(0);
+  const [expandfaq, setexpandfaq] = useState(0);
 
   return (
     <div className="flex flex-col justify-center align-middle">
@@ -324,8 +331,10 @@ function Event() {
             </p>
             {faq2 ? (
               <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-                You can sign up from our registration page here. Availability is
-                on a first-come-first-served basis.
+                There will be only one date for this year on 8 December 2022. We
+                will look to organise the same learning journey every holidays.
+                So stay tune on this page if you are unable to take part in this
+                year’s learning journey.
               </p>
             ) : null}
           </div>
@@ -367,8 +376,8 @@ function Event() {
             </p>
             {faq3 ? (
               <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-                You can sign up from our registration page here. Availability is
-                on a first-come-first-served basis.
+                Yes, you can! However, please note that priority will be given
+                to students that have not participated in our programmes.
               </p>
             ) : null}
           </div>
@@ -409,8 +418,11 @@ function Event() {
             </p>
             {faq4 ? (
               <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-                You can sign up from our registration page here. Availability is
-                on a first-come-first-served basis.
+                All fees paid are strictly non- refundable and non-transferable.
+                If a student wants to withdraw from Let’s Flip USS Learning
+                Journey, he/she will have to inform us through email or our
+                whatsapp number. Based on reason for withdrawal, student will be
+                able to participate in the next Let’s Flip USS Learning Journey.
               </p>
             ) : null}
           </div>
@@ -452,8 +464,9 @@ function Event() {
             </p>
             {faq5 ? (
               <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
-                You can sign up from our registration page here. Availability is
-                on a first-come-first-served basis.
+                We will send you a confirmation email and paid receipt within
+                two days after you have registered and paid for the Let’s Flip
+                USS Learning journey.
               </p>
             ) : null}
           </div>
@@ -487,9 +500,272 @@ function Event() {
           </div>
         </div>
 
+        {/* expanded */}
+        <div className={expandfaq ? "w-full h-fit mt-[0.5vw]" : "hidden"}>
+          <div className="flex flex-row justify-between rounded-3xl my-[1] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                Will the learning journey details (e.g, venue, meeting point,
+                etc) be sent to us?
+              </p>
+              {faq6 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  Yes, learning journey details will be sent to you when you
+                  have successfully been allocated a slot.
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq6(!faq6)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq6 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-between rounded-3xl my-[1vw] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                Will transport to the learning journey venue be provided?
+              </p>
+              {faq7 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  No, you will have to arrange your own transport to the
+                  learning journey venue.
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq7(!faq7)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq7 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-between rounded-3xl my-[1vw] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                What will be the COVID-19 measures?
+              </p>
+              {faq8 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  You are encouraged to take your own ART test in the case that
+                  you are not feeling well. Although masks are not compulsory
+                  for the learning journey, you can choose to wear mask.
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq8(!faq8)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq8 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-between rounded-3xl my-[1vw] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                Will photos and videos be taken during the learning journeys?
+              </p>
+              {faq9 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  Yes, all photos and videos taken at the event will be used for
+                  IMDA’s marketing purposes.
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq9(!faq9)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq9 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-between rounded-3xl my-[1vw] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                Does my child need to bring his/her device to USS?
+              </p>
+              {faq10 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  As this learning journey is going to be an online competition
+                  for students. A mobile device that is powered by IOS or
+                  Android will be needed for the day.
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq10(!faq10)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq10 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-between rounded-3xl my-[1vw] border-[0.2vw] mx-[10vw] border-gray-400">
+            <div className="flex flex-col justify-center align-middle pl-[5vw] py-[3vw] w-[80%]">
+              <p className="font-montserrat text-left text-[1.1vw] text-black font-bold">
+                How to use Let’s Flip for this event?
+              </p>
+              {faq11 ? (
+                <p className="font-montserrat text-left pt-[1vw] text-[0.9vw] text-black font-medium">
+                  Let’s Flip was built by the Score Campus for students to use
+                  as a positive education movement. Students will be able to
+                  download Let’s Flip for Free on the stores.{" "}
+                  <a href="http://onelink.to/gu8yuc" className="text-[#0047FF]">
+                    Link to download
+                  </a>
+                </p>
+              ) : null}
+            </div>
+            <div className="flex justify-center place-self-center align-middle w-[10%]">
+              <svg
+                onClick={() => setfaq11(!faq11)}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[1.5vw]"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <line //horizontal line = minus icon
+                  x1="0"
+                  y1="10"
+                  x2="20"
+                  y2="10"
+                  stroke="black"
+                  strokeWidth={3}
+                />
+                {faq11 ? null : (
+                  <line //horizontal + vertical line = plus icon
+                    x1="10"
+                    y1="0"
+                    x2="10"
+                    y2="20"
+                    stroke="black"
+                    strokeWidth={3}
+                  />
+                )}
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <a
+          onClick={() => setexpandfaq(!expandfaq)}
           className="flex flex-row justify-center place-self-center"
-          href="https://docs.google.com/document/d/1pNFxbFjLWG2-IpEMHQwRBLtJAJrF_HmOlt9NaZuSQgE"
+          // href="https://docs.google.com/document/d/1pNFxbFjLWG2-IpEMHQwRBLtJAJrF_HmOlt9NaZuSQgE"
         >
           <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[4vw] text-black font-medium hover:cursor-pointer">
             More Frequently asked Questions
