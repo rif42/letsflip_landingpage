@@ -1,5 +1,5 @@
 import React from "react";
-import TOC from "./TOC";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Footer() {
@@ -17,7 +17,11 @@ function Footer() {
             data, trials and tribulations, we present to you the Classroom
             Without Walls. Let’s Flip! <br></br>
             <br></br>
-            {/* <Link to="/TOC"> Terms and Conditions for Letsflip USS event</Link> */}
+            <Link to="/TOC" target="_blank" rel="noopener noreferrer">
+              <p className="font-medium text-blue-400 underline hover:cursor-pointer">
+                Terms and Conditions for Letsflip USS event
+              </p>
+            </Link>
           </p>
           <a href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US">
             <div className="font-montserrat flex text-center text-white text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
@@ -86,9 +90,9 @@ function Footer() {
         <div className="flex flex-row justify-center bg-qr bg-center bg-no-repeat bg-contain w-[50vw] mr-[10vw]"></div>
       </div>
 
-      {/* <Routes>
-        <Route path="/TOC" element={<TOC />} />
-      </Routes> */}
+      <Routes>
+        <Route exact path="/TOC" />
+      </Routes>
       {/* footer */}
     </Router>
   );

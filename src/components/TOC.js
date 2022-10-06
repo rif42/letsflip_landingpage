@@ -83,17 +83,6 @@ function TOC() {
             unforeseen circumstances.
           </li>
         </ul>
-
-        {/* <h3 className="font-montserrat text-[1.1vw] font-semibold text-left py-[0.5vw]">
-          4. Reasons for Withdrawals Include
-        </h3>
-        <ul className="font-montserrat text-[1vw] text-left py-[0.75vw] list-disc pl-[2vw] leading-relaxed">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> */}
-
         <h3 className="font-montserrat text-[1.1vw] font-semibold text-left py-[0.5vw]">
           5. Other Terms and Conditions
         </h3>
