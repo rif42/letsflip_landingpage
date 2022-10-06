@@ -1,8 +1,10 @@
 import React from "react";
+import TOC from "./TOC";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div>
+    <Router>
       {/* footer */}
       <div className="footer h-[25vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D] inline-flex flex-row justify-center align-middle">
         <div className="flex flex-col justify-center align-middle px-[10vw]">
@@ -13,7 +15,9 @@ function Footer() {
             Make your learning experience exciting, simple and useful whatever
             your age may be or wherever you may be. After 7 years of research,
             data, trials and tribulations, we present to you the Classroom
-            Without Walls. Let’s Flip!
+            Without Walls. Let’s Flip! <br></br>
+            <br></br>
+            {/* <Link to="/TOC"> Terms and Conditions for Letsflip USS event</Link> */}
           </p>
           <a href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US">
             <div className="font-montserrat flex text-center text-white text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
@@ -36,7 +40,7 @@ function Footer() {
                   />
                 </svg>
 
-                <p className="text-white align-middle text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white align-middle text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
                   @Letsflip.sg
                 </p>
               </div>
@@ -54,7 +58,7 @@ function Footer() {
                     fill="white"
                   />
                 </svg>
-                <p className="text-white place-self-center align-middle text-[1vw] leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white place-self-center align-middle text-[1vw] leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
                   Let's Flip Application
                 </p>
               </div>
@@ -72,7 +76,7 @@ function Footer() {
                     fill="white"
                   />
                 </svg>
-                <p className="text-white align-middle text-[1vw] leading-tight place-self-center tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white align-middle text-[1vw] leading-tight place-self-center tracking-tight pl-[0.5vw] pr-[2vw]">
                   Let's Flip
                 </p>
               </div>
@@ -82,8 +86,11 @@ function Footer() {
         <div className="flex flex-row justify-center bg-qr bg-center bg-no-repeat bg-contain w-[50vw] mr-[10vw]"></div>
       </div>
 
+      {/* <Routes>
+        <Route path="/TOC" element={<TOC />} />
+      </Routes> */}
       {/* footer */}
-    </div>
+    </Router>
   );
 }
 

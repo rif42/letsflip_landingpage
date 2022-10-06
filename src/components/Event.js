@@ -103,8 +103,9 @@ function Event() {
       <div className="slidey overflow-hidden h-[30vw] relative">
         <motion.div
           onClick={Toggle ? () => setToggle(0) : () => setToggle(1)}
+          animate={Toggle ? { x: "0" } : { x: "-100vw" }}
           // initial={{ x: "100%" }}
-          animate={{ ease: "linear", type: "Tween", duration: 3 }}
+          transition={{ type: "Tween", stiffness: 100, duration: 1 }}
           className="flex absolute flex-row align-middle w-full bg-ussbg4 bg-cover bg-no-repeat bg-center h-[30vw]"
         >
           <div className="flex align-middle justify-center place-items-center w-[50%]">
@@ -158,22 +159,22 @@ function Event() {
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-3 w-[10vw] top-[95%] absolute left-[43vw]"
-          viewBox="0 0 200 12"
+          className="h-3 w-[30vw] top-[95%] absolute left-[32vw]"
+          viewBox="0 0 600 12"
           fill="currentColor"
         >
           <line //plus icon
             x1="0"
             y1="0"
-            x2="100"
+            x2="300"
             y2="0"
             stroke={Toggle ? "white" : "black"}
             strokeWidth={Toggle ? 6 : 3}
           />
           <line //plus icon part 2
-            x1="100"
+            x1="300"
             y1="0"
-            x2="200"
+            x2="600"
             y2="0"
             stroke={Toggle ? "black" : "white"}
             strokeWidth={Toggle ? 3 : 6}
@@ -762,15 +763,14 @@ function Event() {
           </div>
         </div>
 
-        <a
+        <div
           onClick={() => setexpandfaq(!expandfaq)}
           className="flex flex-row justify-center place-self-center"
-          // href="https://docs.google.com/document/d/1pNFxbFjLWG2-IpEMHQwRBLtJAJrF_HmOlt9NaZuSQgE"
         >
           <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[4vw] text-black font-medium hover:cursor-pointer">
             More Frequently asked Questions
           </p>
-        </a>
+        </div>
       </div>
     </div>
   );

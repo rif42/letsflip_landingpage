@@ -6,7 +6,9 @@ import MasterClass from "./components/MasterClass";
 import MeetTheTeam from "./components/MeetTheTeam";
 import Partner from "./components/Partner";
 import Event from "./components/Event";
+import TOC from "./components/TOC";
 import Gradient from "rgt";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
