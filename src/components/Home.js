@@ -19,34 +19,39 @@ function Home() {
           walls of a classroom
         </div>
         <div className="flex-row inline-flex justify-center w-full h-[5vw] py-[2vw]">
-          <div
-            className="flex hover:cursor-pointer font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
-            style={{
-              "box-shadow":
-                "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
-            }}
-          >
-            <img
-              className="flex justify-center align-middle pr-[1vw]"
-              src={require("../assets/appstore.png")}
-              alt={"apple store icon"}
-            />
-            Download on the App Store
-          </div>
-          <div
-            className="flex hover:cursor-pointer font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
-            style={{
-              "box-shadow":
-                "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
-            }}
-          >
-            <img
-              className="flex justify-center align-middle pr-[1vw]"
-              src={require("../assets/playstore.png")}
-              alt={"playstore icon"}
-            />
-            Download on the Play Store
-          </div>
+          <a href="https://apps.apple.com/id/app/lets-fl-p/id1538266714">
+            <div
+              className="flex hover:cursor-pointer font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
+              style={{
+                "box-shadow":
+                  "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
+              }}
+            >
+              <img
+                className="flex justify-center align-middle pr-[1vw]"
+                src={require("../assets/appstore.png")}
+                alt={"apple store icon"}
+              />
+              Download on the App Store
+            </div>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US">
+            <div
+              className="flex hover:cursor-pointer font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
+              style={{
+                "box-shadow":
+                  "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
+              }}
+            >
+              <img
+                className="flex justify-center align-middle pr-[1vw]"
+                src={require("../assets/playstore.png")}
+                alt={"playstore icon"}
+              />
+              Download on the Play Store
+            </div>
+          </a>
         </div>
         <img
           className="flex justify-end px-[15vw] py-[1vw]"

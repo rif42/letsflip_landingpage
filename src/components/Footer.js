@@ -15,13 +15,14 @@ function Footer() {
             data, trials and tribulations, we present to you the Classroom
             Without Walls. Let’s Flip!
           </p>
-          <button className="font-montserrat flex text-center text-white text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
-            {" "}
-            Learn More!{" "}
-          </button>
+          <a href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US">
+            <div className="font-montserrat flex text-center text-white text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
+              Download now
+            </div>
+          </a>
+
           <div className="flex flex-row justify-start align-middle pt-[2vw]">
-            <a href="https://www.instagram.com/scorecampus">
-              {/* https://www.facebook.com/ScoreCampus/ */}
+            <a href="https://www.instagram.com/letsflip.sg/">
               <div className="flex flex-row">
                 <svg
                   width="2vw"
@@ -40,7 +41,7 @@ function Footer() {
                 </p>
               </div>
             </a>
-            <a href="https://www.linkedin.com/company/score-campus">
+            <a href="https://www.linkedin.com/showcase/let-s-flip-application">
               <div className="flex flex-row">
                 <svg
                   width="2vw"
@@ -54,11 +55,11 @@ function Footer() {
                   />
                 </svg>
                 <p className="text-white place-self-center align-middle text-[1vw] leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
-                  Score Campus
+                  Let's Flip Application
                 </p>
               </div>
             </a>
-            <a href="https://www.facebook.com/ScoreCampus/">
+            <a href="https://www.facebook.com/letsflipapp/">
               <div className="flex flex-row">
                 <svg
                   width="2vw"
@@ -72,17 +73,13 @@ function Footer() {
                   />
                 </svg>
                 <p className="text-white align-middle text-[1vw] leading-tight place-self-center tracking-tight pl-[0.5vw] pr-[2vw]">
-                  @Scorecampus
+                  Let's Flip
                 </p>
               </div>
             </a>
           </div>
         </div>
-        <img
-          className="flex justify-center content-center self-center max-w-[40%] px-[10vw]"
-          src={require("../assets/qrcode.png")}
-          alt={"qr code"}
-        />
+        <div className="flex flex-row justify-center bg-qr bg-center bg-no-repeat bg-contain w-[50vw] mr-[10vw]"></div>
       </div>
 
       {/* footer */}
