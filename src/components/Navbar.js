@@ -1,23 +1,24 @@
-import React, { useState } from "react";
-import Home from "./components/Home";
-import Footer from "./components/Footer";
-import PrivateClass from "./components/PrivateClass";
-import MasterClass from "./components/MasterClass";
-import MeetTheTeam from "./components/MeetTheTeam";
-import Partner from "./components/Partner";
-import Event from "./components/Event";
-import TOC from "./components/TOC";
-import Navbar from "./components/Navbar";
+import React, { useState }  from 'react';
 import Gradient from "rgt";
+import { motion } from "framer-motion";
+import Home from "./Home";
+import Footer from "./Footer";
+import PrivateClass from "./PrivateClass";
+import MasterClass from "./MasterClass";
+import MeetTheTeam from "./MeetTheTeam";
+import Partner from "./Partner";
+import Event from "./Event";
+import TOC from "./TOC";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import "./App.css";
 
-function App() {
+function Navbar() {
+  const [navState, setNavState] = useState("Event");
 
   return (
-    <div className="App">
-      {/* <div className="Navbar-container align-middle place-content-center place-items-center flex-row inline-flex justify-even w-full h-23 sticky top-0 bg-white z-50">
+    <Router>
+        <div className="Navbar-container align-middle place-content-center place-items-center flex-row inline-flex justify-even w-full h-23 sticky top-0 bg-white z-50">
         <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo bg-contain w-[15vw] h-[4.5vw] pl-[15vw]"></div>
         <div
           onClick={() => {
@@ -103,19 +104,11 @@ function App() {
           </div>
         </a>
       </div>
-
-      {navState === "Event" ? <Event /> : null}
-      {navState === "Home" ? <Home /> : null}
-      {navState === "PrivateClass" ? <PrivateClass /> : null}
-      {navState === "MasterClass" ? <MasterClass /> : null}
-      {navState === "MeetTheTeam" ? <MeetTheTeam /> : null}
-      {navState === "Partner" ? <Partner /> : null} */}
-
-      <Navbar/>
-
-      <Footer />
-    </div>
-  );
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default Navbar
