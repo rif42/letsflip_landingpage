@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  const [navState, setNavState] = useState("Home");
+  const [navState, setNavState] = useState("Event");
 
   return (
     <div className="App">
