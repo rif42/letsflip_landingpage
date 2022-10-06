@@ -42,7 +42,12 @@ function Event() {
             December for the first ever Let’s Flip USS competition
           </p>
           <div className="flex font-montserrat text-[1.1vw] font-medium text-white ml-[5vw] w-[10vw] py-[0.3vw] mt-[1vw] flex-row text-center place-content-center place-items-center align-middle bg-[#FF0030] hover:cursor-pointer">
-            Register now!
+            <a
+              href="https://event.getletsflip.com/uss-registrant"
+              style={{ display: "block" }}
+            >
+              Register now!
+            </a>
           </div>
         </div>
         <div className="flex align-middle bg-blue-400 w-[60%]">
@@ -212,7 +217,12 @@ function Event() {
           Singapore competition.
         </p>
         <div className="flex font-montserrat place-self-center place-content-center text-[1.1vw] mt-[3vw] font-medium text-white w-[10vw] bg-[#FF0030] hover:cursor-pointer">
-          Register now!
+          <a
+            href="https://event.getletsflip.com/uss-registrant"
+            style={{ display: "block" }}
+          >
+            Register now!
+          </a>
         </div>
       </div>
 
