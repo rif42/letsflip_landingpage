@@ -113,8 +113,8 @@ function Navbar() {
         </Link>
 
         <a
-          className="flex  hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] px-[3vw] w-fit h-[2.5vw]"
-          href="https://play.google.com/store/apps/details?id=com.lets_flip&hl=en_US&gl=US"
+          className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] px-[3vw] w-fit h-[2.5vw]"
+          href="https://onelink.to/hc6ta4"
         >
           <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-xl font-montserrat text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.3vw]">
             Download Now

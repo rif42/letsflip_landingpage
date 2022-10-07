@@ -22,15 +22,18 @@ function PrivateClass() {
           Your exclusive space to create missions and grade your invitees.
         </p>
         <div className="flex-row hover:cursor-pointer inline-flex justify-start w-full h-[5vw] py-[2vw]">
-          <div
-            className="flex font-montserrat text-center bg-transparent tracking-wide text-white  text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
-            style={{
-              "box-shadow":
-                "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
-            }}
-          >
-            Download now
-          </div>
+          <a href="https://onelink.to/hc6ta4">
+            <div
+              className="flex font-montserrat text-center bg-transparent tracking-wide text-white  text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
+              style={{
+                "box-shadow":
+                  "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
+              }}
+            >
+              Download now
+            </div>
+          </a>
+
           <div
             className="flex hover:cursor-pointer font-montserrat text-center bg-transparent tracking-wide text-white  text-[0.9vw] items-center justify-center align-middle rounded-full px-[3vw] mx-[3vw] w-fit h-[3vw]"
             style={{

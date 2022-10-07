@@ -16,15 +16,17 @@ function MasterClass() {
           Experience interactive learning in a world of<br></br>exclusive
           content created by qualified educators.
         </p>
-        <div
-          className="flex place-self-end justify-end font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
-          style={{
-            "box-shadow":
-              "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
-          }}
-        >
-          Download now
-        </div>
+        <a className="flex place-self-end" href="https://onelink.to/hc6ta4">
+          <div
+            className="flex place-self-end justify-end font-montserrat text-center bg-transparent tracking-wide text-white font-light text-[0.9vw] items-center align-middle rounded-full px-[3vw] mx-[5vw] w-fit h-[3vw]"
+            style={{
+              "box-shadow":
+                "rgb(255 255 255 / 16%) -2px -3px 7px, rgb(0 0 0 / 20%) 2px 4px 7px",
+            }}
+          >
+            Download now
+          </div>
+        </a>
       </div>
 
       <div className="h-[35vw] w-full flex flex-col ">
