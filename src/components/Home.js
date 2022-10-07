@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import App from "../App";
+import Footer from "./Footer";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -224,6 +224,8 @@ function Home() {
         src={require("../assets/people.png")}
         alt={"people"}
       />
+
+      <Footer />
     </div>
   );
 }

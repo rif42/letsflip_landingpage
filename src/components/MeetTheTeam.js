@@ -1,5 +1,6 @@
 import React from "react";
 import StaffCard from "./StaffCard";
+import Footer from "./Footer";
 
 function MeetTheTeam() {
   return (
@@ -114,6 +115,8 @@ function MeetTheTeam() {
           email="mailto:imam@scorecampus.com"
         />
       </div>
+
+      <Footer />
     </div>
   );
 }

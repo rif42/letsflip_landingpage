@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Gradient from "rgt";
-
 import Home from "./Home";
 import PrivateClass from "./PrivateClass";
 import MasterClass from "./MasterClass";
@@ -9,7 +8,6 @@ import Partner from "./Partner";
 import Event from "./Event";
 import TOC from "./TOC";
 import ScrollToTop from "./ScrollToTop";
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Navbar() {

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 function TOC() {
   return (
@@ -216,6 +217,7 @@ function TOC() {
           </li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

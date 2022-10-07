@@ -1,10 +1,10 @@
 import React from "react";
-
+import Privacy from "./Privacy";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <Router>
+    <div>
       {/* footer */}
       <div className="footer h-[25vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D] inline-flex flex-row justify-center align-middle">
         <div className="flex flex-col justify-center align-middle px-[10vw]">
@@ -17,10 +17,9 @@ function Footer() {
             data, trials and tribulations, we present to you the Classroom
             Without Walls. Let’s Flip! <br></br>
             <br></br>
-            {/* target="_blank" rel="noopener noreferrer */}
-            <Link to="/TOC" target="_blank" rel="noopener noreferrer">
+            <Link to="/privacy">
               <p className="font-medium text-blue-400 underline hover:cursor-pointer">
-                Terms and Conditions for Letsflip USS event
+                Privacy Policy for Let's Flip
               </p>
             </Link>
           </p>
@@ -92,10 +91,10 @@ function Footer() {
       </div>
 
       <Routes>
-        <Route exact path="/TOC" />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       {/* footer */}
-    </Router>
+    </div>
   );
 }
 

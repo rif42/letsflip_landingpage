@@ -1,13 +1,14 @@
 import React from "react";
+import Footer from "./Footer";
 
 function Partner() {
   return (
     <div>
-        <img
-          className="flex absolute left-[25%]"
-          src={require("../assets/partnerheader.png")}
-          alt={"create mission"}
-        />
+      <img
+        className="flex absolute left-[25%]"
+        src={require("../assets/partnerheader.png")}
+        alt={"create mission"}
+      />
       <div className="h-[35vw] w-full bg-pfc bg-no-repeat bg-center bg-cover flex flex-col align-middle justify-center z-10">
         <h1 className="font-montserrat align-center text-center px-[5vw] text-[5vw] pt-[5vw] leading-tight font-extrabold text-white">
           #TOGETHERSTRONGER
@@ -88,6 +89,7 @@ function Partner() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

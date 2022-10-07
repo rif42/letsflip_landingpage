@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Footer from "./Footer";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Event() {
   const [Toggle, setToggle] = useState(0);
@@ -777,11 +779,20 @@ function Event() {
           onClick={() => setexpandfaq(!expandfaq)}
           className="flex flex-row justify-center place-self-center"
         >
-          <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[4vw] text-black font-medium hover:cursor-pointer">
+          <p className="font-montserrat text-center flex flex-row justify-center place-self-center underline w-[20vw] text-[1.1vw] pt-[2vw] pb-[3vw] text-black font-medium hover:cursor-pointer">
             More Frequently asked Questions
           </p>
         </div>
       </div>
+      <Link to="/TOC">
+        <p className="font-montserrat text-[1.1vw] font-medium text-blue-500 underline hover:cursor-pointer pb-[3vw]">
+          Terms and Conditions for Letsflip USS event
+        </p>
+      </Link>
+      <Routes>
+        <Route path="/TOC" />
+      </Routes>
+      <Footer />
     </div>
   );
 }

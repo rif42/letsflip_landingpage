@@ -1,5 +1,6 @@
 import React from "react";
 import Gradient from "rgt";
+import Footer from "./Footer";
 
 function PrivateClass() {
   <link
@@ -204,6 +205,8 @@ function PrivateClass() {
         </div>
         <div className="h-[3vw]"></div>
       </div>
+
+      <Footer />
     </div>
   );
 }

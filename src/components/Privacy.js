@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 
 function Privacy() {
   const [policy1, setpolicy1] = useState(0);
@@ -2438,6 +2439,7 @@ function Privacy() {
           </ul> */}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

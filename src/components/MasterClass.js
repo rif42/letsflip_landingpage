@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 function MasterClass() {
   return (
@@ -97,6 +98,7 @@ function MasterClass() {
 
         <div className="h-[3vw]"></div>
       </div>
+      <Footer />
     </div>
   );
 }
