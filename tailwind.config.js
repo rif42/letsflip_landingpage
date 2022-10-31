@@ -26,6 +26,9 @@ module.exports = {
         g8: "url('/src/assets/group8.jpg')",
         g9: "url('/src/assets/group9.jpg')",
         qr: "url('/src/assets/qrcode.png')",
+        bubblebg: "url('/src/assets/bubblebg.png')",
+        bubblebg2: "url('/src/assets/bubblebg2.png')",
+        bubblebg3: "url('/src/assets/bubblebg3.png')",
       },
       fontFamily: {
         montserrat: ["Montserrat", "serif"],

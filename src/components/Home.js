@@ -135,9 +135,9 @@ function Home() {
       {/* banner2 */}
 
       {/* banner3 */}
-      <div className="banner3 h-[40vw] w-full flex flex-row align-middle justify-end">
+      <div className="banner3 h-[40vw] w-full bg-[#FFEEEA] flex flex-row align-middle justify-end">
         <div className="font-monserrat text-left w-[40vw] pr-[10vw] pt-[5vw] flex-row align-middle">
-          <h2 className="font-montserrat font-extrabold text-black text-[3vw] leading-snug tracking-tight">
+          <h2 className="font-montserrat font-extrabold  text-black text-[3vw] leading-snug tracking-tight">
             THE WORLD’S FIRST AUTHENTIC MOBILE LEARNING APP
           </h2>
           <p className="font-montserrat pt-[1vw] text-black text-[1.1vw] leading-tight">
@@ -190,7 +190,7 @@ function Home() {
       {/* banner4 */}
 
       {/* banner5 */}
-      <div className="banner5 h-[60vw] w-full flex flex-col align-middle justify-center">
+      <div className="banner5 bg-[#FFEEEA] h-[60vw] w-full flex flex-col align-middle justify-center">
         <h2 className="font-montserrat font-extrabold text-black text-[4vw] leading-snug tracking-tight">
           JOIN CLASSROOMS
         </h2>

@@ -43,7 +43,7 @@ function MasterClass() {
         </p>
       </div>
 
-      <div className="h-fit w-full flex flex-col ">
+      <div className="h-fit w-full flex flex-col bg-[#FFEEEA]">
         <img
           className="absolute place-self-end mt-[-10vw]"
           src={require("../assets/Giftbox2.png")}
@@ -67,26 +67,30 @@ function MasterClass() {
         <h2 className="font-montserrat align-center text-left px-[25vw] pt-[5vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Based on the points received, you will be able to win rewards
         </h2>
-        <p className="font-montserrat text-black text-[2vw] align-center text-left px-[25vw] pt-[2vw] font-medium">
+        <p className="font-montserrat text-black text-[2vw] align-center text-left px-[25vw] pb-[10vw] pt-[2vw] font-medium">
           Rewards will motivate users to continuously participate with the
           missions and responses.
         </p>
+      </div>
 
-        <h2 className="font-montserrat align-center text-right pt-[15vw] pr-[10vw] pl-[30vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
+      <div className="h-fit w-full flex flex-col ">
+        <img
+          className="absolute ml-[12vw] mt-[5vw] w-[20vw]"
+          src={require("../assets/mc.png")}
+          alt={"masterclassroom example"}
+        />
+        <h2 className="font-montserrat align-center text-right pt-[5vw] pr-[10vw] pl-[30vw] text-[4.5vw] leading-tight tracking-tight font-extrabold text-black">
           Master Classroom is an excellent platform for influencers
         </h2>
-        <p className="font-montserrat text-black text-[2vw] align-center text-right pt-[2vw] pr-[10vw] pl-[30vw] font-medium">
+        <p className="font-montserrat text-black text-[2vw] align-center text-right pb-[10vw] pt-[2vw] pr-[10vw] pl-[30vw] font-medium">
           to promote themselves as well as<br></br>
           larger businesses to advertise. Fans will then<br></br>
           be inspired to purchase these classrooms.
         </p>
-        <img
-          className="absolute ml-[12vw] mt-[42vw] w-[20vw]"
-          src={require("../assets/mc.png")}
-          alt={"masterclassroom example"}
-        />
+      </div>
 
-        <p className="font-montserrat text-black text-[2vw] align-center text-center pt-[10vw] pb-[3vw] font-bold">
+      <div className="h-fit w-full flex flex-col bg-[#FFEEEA]">
+        <p className="font-montserrat text-black text-[2vw] align-center text-center pt-[3vw] pb-[3vw] font-bold">
           Upgrade to Master Classroom for only $7.99 USD per account.
         </p>
 

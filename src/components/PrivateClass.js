@@ -47,6 +47,8 @@ function PrivateClass() {
         </div>
       </div>
       <div className="first-letter:flex h-[21vw] flex-col">
+        <div className="absolute mt-[-8vw] ml-[10vw] w-full h-[60vw] bg-bubblebg bg-contain bg-no-repeat z-[-10]"></div>
+
         <div className="mt-[13vw] ml-[26vw] align-center w-fit h-fit">
           <h2 className="font-montserrat absolute text-left text-[6vw] font-extrabold z-[1] pl-[1vw]">
             <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
@@ -93,9 +95,9 @@ function PrivateClass() {
           given where due.
         </p>
       </div>
-      <div className="h-[45vw] flex flex-col">
+      <div className="h-[45vw] flex bg-[#FFEEEA] flex-col">
         <img
-          className="absolute w-[32vw] h-[21vw] ml-[48vw] mt-[-10vw]"
+          className="absolute w-[32vw] h-[26vw] ml-[48vw] mt-[-10vw]"
           src={require("../assets/hiw-vector-4.png")}
           alt={"arrowdown"}
         />
@@ -109,7 +111,7 @@ function PrivateClass() {
           src={require("../assets/respon-1.png")}
           alt={"responses"}
         />
-        <h2 className="font-montserrat text-right text-[5vw] font-extrabold text-black pt-[10vw] pr-[10vw]">
+        <h2 className="font-montserrat text-right text-[5vw] font-extrabold text-black pt-[16vw] pr-[10vw]">
           RESPOND
         </h2>
         <p className="font-montserrat text-right text-black text-[1.2vw] leading-tight pl-[53vw] pr-[10vw]">
@@ -118,19 +120,21 @@ function PrivateClass() {
           environment that inspires their creativity.
         </p>
         <img
-          className="flex justify-right w-[60vw] h-[23vw] ml-[20vw]"
+          className="flex justify-right w-[60vw] mt-[3vw] h-[30vw] ml-[20vw]"
           src={require("../assets/hiw-vector-5.png")}
           alt={"arrow left to down"}
         />
       </div>
 
-      <div className="h-[32vw] flex flex-col">
+      <div className="h-[40vw] flex flex-col">
+        <div className="absolute ml-[10vw] w-[80%] h-[40vw] bg-bubblebg2 bg-contain bg-no-repeat z-[-10]"></div>
+
         <img
-          className="flex place-self-end absolute w-[35vw] h-[55vw] mt-[-20vw] ml-[-12vw]"
+          className="flex place-self-end absolute w-[35vw] h-[55vw] mt-[-12vw] ml-[-12vw]"
           src={require("../assets/grading-phone.png")}
           alt={"letsflip profile"}
         />
-        <h2 className="font-montserrat text-left text-[5vw] font-extrabold text-black pt-[1vw] pl-[10vw]">
+        <h2 className="font-montserrat text-left text-[5vw] font-extrabold text-black pt-[13vw] pl-[10vw]">
           GRADE
         </h2>
         <p className="font-montserrat text-left text-black pl-[10vw] pr-[55vw] text-[1.2vw] leading-tight ">
@@ -142,6 +146,7 @@ function PrivateClass() {
       </div>
 
       <div className="h-fit flex flex-col">
+        <div className="absolute mt-[25vw] w-full h-[40vw] bg-bubblebg3 bg-contain bg-no-repeat z-[-10]"></div>
         <p
           style={{
             "text-shadow":
@@ -164,13 +169,15 @@ function PrivateClass() {
           alt={"response"}
         />
 
-        <p className="font-montserrat text-center text-black px-[20vw] text-[1.2vw] leading-tight  ">
+        <p className="font-montserrat text-center text-black px-[20vw] pb-[3vw] text-[1.2vw] leading-tight  ">
           we get a chance to see how your mind worked in getting the response,
           connect it to relevant academic topics, and identify real people who
           are affected by this phenomenon.
         </p>
+      </div>
 
-        <p className="font-montserrat text-center text-gray-800 px-[20vw] text-[1.5vw] pt-[5vw] leading-tight  ">
+      <div className="h-fit flex flex-col bg-[#FFEEEA]">
+        <p className="font-montserrat text-center text-gray-800 px-[20vw] pb-[2vw] text-[1.5vw] pt-[2vw] leading-tight  ">
           Private Classroom missions will be similar to public classroom
           missions
         </p>
@@ -191,20 +198,21 @@ function PrivateClass() {
           src={require("../assets/request-access.jpg")}
           alt={"request access private class"}
         />
-
-        <p className="font-montserrat text-center text-black px-[20vw] text-[1.1vw] py-[3vw] leading-tight  ">
-          Contents for Private missions can be curated with personalized
-          learning to engage every student. Upgrade to Private Classroom for
-          only $2.99 USD per account.
-        </p>
-
-        <div className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mx-[5vw] w-fit h-[3vw]">
-          <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat  text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
-            Upgrade now
-          </div>
-        </div>
         <div className="h-[3vw]"></div>
       </div>
+
+      <p className="font-montserrat text-center text-black px-[20vw] text-[1.1vw] py-[3vw] leading-tight  ">
+        Contents for Private missions can be curated with personalized learning
+        to engage every student. Upgrade to Private Classroom for only $2.99 USD
+        per account.
+      </p>
+
+      <div className="flex hover:cursor-pointer ml-[45vw] bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center rounded-xl px-[3vw] mx-[5vw] w-fit h-[3vw]">
+        <div className="flex flex-col text-center justify-center align-middle place-self-center bg-white rounded-xl font-montserrat  text-[0.9vw] mx-[-2.9vw] w-[10vw] h-[2.9vw]">
+          Upgrade now
+        </div>
+      </div>
+      <div className="h-[3vw]"></div>
 
       <Footer />
     </div>
