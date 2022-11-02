@@ -7,6 +7,7 @@ import MeetTheTeam from "./components/MeetTheTeam";
 import Partner from "./components/Partner";
 import Event from "./components/Event";
 import TOC from "./components/TOC";
+import Demo from "./components/Demo";
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -118,6 +119,21 @@ function App() {
             </div>
           </Link>
 
+          <Link to="/Demo">
+            <div
+              onClick={() => {
+                setNavState("Demo");
+              }}
+              className={
+                navState === "Demo"
+                  ? "font-montserrat font-medium flex text-center text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+                  : "font-montserrat font-medium flex text-center text-[0.9vw] tracking-wide text-black cursor-pointer"
+              }
+            >
+              Demo
+            </div>
+          </Link>
+
           <a
             className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] px-[3vw] w-fit h-[2.5vw]"
             href="https://onelink.to/hc6ta4"
@@ -137,6 +153,7 @@ function App() {
           <Route path="/PrivateClass" element={<PrivateClass />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
           <Route path="/Partner" element={<Partner />} />
+          <Route path="/Demo" element={<Demo />} />
           <Route path="/TOC" element={<TOC />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>

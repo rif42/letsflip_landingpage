@@ -29,6 +29,7 @@ module.exports = {
         bubblebg: "url('/src/assets/bubblebg.png')",
         bubblebg2: "url('/src/assets/bubblebg2.png')",
         bubblebg3: "url('/src/assets/bubblebg3.png')",
+        demobg2: "url('/src/assets/demobg2.png')",
       },
       fontFamily: {
         montserrat: ["Montserrat", "serif"],
