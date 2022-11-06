@@ -14,7 +14,7 @@ function MobileNavbar() {
           className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-md mx-[5vw] px-[0.3vw] w-fit h-[7vw]"
           href="https://onelink.to/hc6ta4"
         >
-          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-md font-montserrat text-[0.75em] w-[30vw] h-[6.5vw]">
+          <div className="flex flex-col text-center font-medium tracking-wide justify-center align-middle place-self-center bg-white rounded-md font-montserrat text-[3vw] w-[30vw] h-[6.5vw]">
             Download Now
           </div>
         </a>
