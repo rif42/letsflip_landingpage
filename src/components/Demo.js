@@ -19,14 +19,14 @@ function Demo() {
         </p>
       </div>
 
-      <div className="flex flex-col justify-center mt-[4vw] h-[40vw] w-full">
+      <div className="flex flex-col justify-center h-[40vw] w-full">
         <p className="text-right font-montserrat text-[3vw] pr-[3vw] font-extrabold">
           Our educations team{<br />} will be able to share{<br />} more about
           Let’s Flip{<br />}
           through a demo session.{" "}
         </p>
         <img
-          className="absolute ml-[-5vw]"
+          className="absolute mt-[4vw] w-[65%] ml-[-5vw]"
           src={require("../assets/demobg1.png")}
           alt={"phone background"}
         />

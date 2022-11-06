@@ -10,11 +10,9 @@ function Home() {
       {/* banner1 */}
       <div className="flex flex-col banner1 h-[34.9vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D]">
         <h1 className="font-montserrat text-center px-[22vw] pt-[1vw] text-[3.5vw] leading-tight font-extrabold text-white">
-          {" "}
           TURN THE WORLD INTO YOUR CLASSROOM & LET YOUR VOICES BE HEARD{" "}
         </h1>
         <div className="font-montserrat text-center px-[10vw] pt-[1vw] text-[1.1vw] tracking-wide text-white">
-          {" "}
           Scroll through the hallways of Let’s Fl!p while learning beyond the
           walls of a classroom
         </div>
@@ -28,7 +26,7 @@ function Home() {
               }}
             >
               <img
-                className="flex justify-center align-middle pr-[1vw]"
+                className="flex justify-center align-middle w-[3vw] pr-[1vw]"
                 src={require("../assets/appstore.png")}
                 alt={"apple store icon"}
               />
@@ -45,7 +43,7 @@ function Home() {
               }}
             >
               <img
-                className="flex justify-center align-middle pr-[1vw]"
+                className="flex justify-center align-middle w-[2.4vw] pr-[1vw]"
                 src={require("../assets/playstore.png")}
                 alt={"playstore icon"}
               />

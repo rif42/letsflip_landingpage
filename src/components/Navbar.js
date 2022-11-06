@@ -1,12 +1,5 @@
 import React, { useState } from "react";
 import Gradient from "rgt";
-import Home from "./Home";
-import PrivateClass from "./PrivateClass";
-import MasterClass from "./MasterClass";
-import MeetTheTeam from "./MeetTheTeam";
-import Partner from "./Partner";
-import Event from "./Event";
-import TOC from "./TOC";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -14,7 +7,7 @@ function Navbar() {
   const [navState, setNavState] = useState("Event");
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <div className="Navbar-container align-middle place-content-center place-items-center flex-row flex justify-between w-full h-23 sticky top-0 bg-white z-50">
         <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo bg-contain w-[15vw] h-[4.5vw] pl-[15vw]"></div>
@@ -110,6 +103,21 @@ function Navbar() {
           </div>
         </Link>
 
+        <Link to="/Demo">
+          <div
+            onClick={() => {
+              setNavState("Demo");
+            }}
+            className={
+              navState === "Demo"
+                ? "font-montserrat font-medium flex text-center text-[0.9vw] tracking-wide text-black cursor-pointer underline decoration-2 underline-offset-4 decoration-red-400"
+                : "font-montserrat font-medium flex text-center text-[0.9vw] tracking-wide text-black cursor-pointer"
+            }
+          >
+            Demo
+          </div>
+        </Link>
+
         <a
           className="flex hover:cursor-pointer bg-gradient-to-r from-[#FC5229] to-[#AF067D] place-self-center place-content-center place-items-center justify-center align-middle rounded-xl mx-[5vw] px-[3vw] w-fit h-[2.5vw]"
           href="https://onelink.to/hc6ta4"
@@ -119,16 +127,7 @@ function Navbar() {
           </div>
         </a>
       </div>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/Event" element={<Event />} />
-        <Route path="/MasterClass" element={<MasterClass />} />
-        <Route path="/PrivateClass" element={<PrivateClass />} />
-        <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-        <Route path="/Partner" element={<Partner />} />
-        <Route path="/TOC" element={<TOC />} />
-      </Routes>
-    </Router>
+    </>
   );
 }
 
