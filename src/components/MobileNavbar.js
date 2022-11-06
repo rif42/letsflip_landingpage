@@ -39,7 +39,7 @@ function MobileNavbar() {
             : "hidden"
         }
       >
-        <Link to="/Event">
+        <Link to="/Event" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
               Event
@@ -47,37 +47,37 @@ function MobileNavbar() {
           </div>
         </Link>
 
-        <Link to="/">
+        <Link to="/" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Home
           </div>
         </Link>
 
-        <Link to="/PrivateClass">
+        <Link to="/PrivateClass" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Private Classroom
           </div>
         </Link>
 
-        <Link to="/MasterClass">
+        <Link to="/MasterClass" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Master Classroom
           </div>
         </Link>
 
-        <Link to="/MeetTheTeam">
+        <Link to="/MeetTheTeam" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Meet The Team
           </div>
         </Link>
 
-        <Link to="/Partner">
+        <Link to="/Partner" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Partner
           </div>
         </Link>
 
-        <Link to="/Demo">
+        <Link to="/Demo" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             Demo
           </div>

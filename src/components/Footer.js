@@ -6,12 +6,12 @@ function Footer() {
   return (
     <div>
       {/* footer */}
-      <div className="footer h-[25vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D] inline-flex flex-row justify-center align-middle">
+      <div className="footer h-fit sm:h-[25vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D] inline-flex flex-row justify-center align-middle">
         <div className="flex flex-col justify-center align-middle px-[10vw]">
-          <h2 className="font-montserrat font-extrabold text-white text-left text-[4vw] leading-snug tracking-tight">
+          <h2 className="font-montserrat font-extrabold text-white text-left text-[8vw] pt-[5vw] sm:pt-0 sm:text-[4vw] leading-snug tracking-tight">
             HAVE FUN!
           </h2>
-          <p className="font-montserrat text-WHITE text-left text-white font-light justify-center align-middle text-[1.4vw] leading-tight tracking-tight">
+          <p className="font-montserrat text-WHITE text-left text-white font-light justify-center align-middle text-[2.5vw] sm:text-[1.4vw] sm:pb-0 pb-[1vw] leading-tight tracking-tight">
             Make your learning experience exciting, simple and useful whatever
             your age may be or wherever you may be. After 7 years of research,
             data, trials and tribulations, we present to you the Classroom
@@ -23,17 +23,22 @@ function Footer() {
               </p>
             </Link>
           </p>
-          <a href="https://onelink.to/hc6ta4">
-            <div className="font-montserrat flex text-center text-white text-[0.9vw] items-center justify-center align-middle rounded-xl px-[3vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
+          <a
+            href="https://onelink.to/hc6ta4"
+            className="flex flex-row justify-center sm:justify-start"
+          >
+            <div className="font-montserrat flex text-center text-white text-[2.3vw] sm:text-[0.9vw] items-center justify-center align-middle rounded-xl px-[10vw] sm:px-[3vw] mt-[2vw] w-fit h-[8vw] sm:h-[3vw] shadow-gray-500 shadow-md">
               Download now
             </div>
           </a>
 
-          <div className="flex flex-row justify-start align-middle pt-[2vw]">
+          <div className="sm:hidden flex flex-row place-self-center justify-center bg-qr bg-center bg-no-repeat bg-cover h-[50vw] w-[50vw] mt-[5vw]"></div>
+
+          <div className="flex sm:flex-row flex-col justify-start align-middle pt-[2vw]">
             <a href="https://www.instagram.com/letsflip.sg/">
               <div className="flex flex-row">
                 <svg
-                  width="2vw"
+                  className="sm:w-[2vw] w-[6vw] sm:pb-0 pb-[2vw]"
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +49,7 @@ function Footer() {
                   />
                 </svg>
 
-                <p className="font-montserrat text-white align-middle text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white align-middle text-[2.3vw] sm:text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw] sm:pb-0 pb-[2vw]">
                   @Letsflip.sg
                 </p>
               </div>
@@ -52,7 +57,7 @@ function Footer() {
             <a href="https://www.linkedin.com/showcase/let-s-flip-application">
               <div className="flex flex-row">
                 <svg
-                  width="2vw"
+                  className="sm:w-[2vw] w-[6vw] sm:pb-0 pb-[2vw]"
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +67,7 @@ function Footer() {
                     fill="white"
                   />
                 </svg>
-                <p className="font-montserrat text-white place-self-center align-middle text-[1vw] leading-tight tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white align-middle text-[2.3vw] sm:text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw] sm:pb-0 pb-[2vw]">
                   Let's Flip Application
                 </p>
               </div>
@@ -70,7 +75,7 @@ function Footer() {
             <a href="https://www.facebook.com/letsflipapp/">
               <div className="flex flex-row">
                 <svg
-                  width="2vw"
+                  className="sm:w-[2vw] w-[6vw] sm:pb-0 pb-[2vw]"
                   viewBox="0 0 16 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -80,14 +85,14 @@ function Footer() {
                     fill="white"
                   />
                 </svg>
-                <p className="font-montserrat text-white align-middle text-[1vw] leading-tight place-self-center tracking-tight pl-[0.5vw] pr-[2vw]">
+                <p className="font-montserrat text-white align-middle text-[2.3vw] sm:text-[1vw] place-self-center leading-tight tracking-tight pl-[0.5vw] pr-[2vw] sm:pb-0 pb-[2vw]">
                   Let's Flip
                 </p>
               </div>
             </a>
           </div>
         </div>
-        <div className="flex flex-row justify-center bg-qr bg-center bg-no-repeat bg-contain w-[50vw] mr-[10vw]"></div>
+        <div className="sm:flex hidden flex-row justify-center bg-qr bg-center bg-no-repeat bg-contain w-[50vw] mr-[10vw]"></div>
       </div>
 
       <Routes>
