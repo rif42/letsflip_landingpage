@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
+import DemoModal from "./DemoModal";
 
 function Demo() {
+  const [show, setShow] = useState(false);
+
   return (
     <div className="flex flex-col justify-center align-middle">
       <div className="flex flex-col justify-center banner1 h-[39.6vw] w-full bg-gradient-to-r from-[#FC5229] to-[#AF067D]">
@@ -33,7 +36,7 @@ function Demo() {
       </div>
 
       <div className="flex flex-col h-[70vw] justify-center align-middle bg-demobg2 bg-center bg-cover bg-no-repeat w-full">
-        <h1 className="font-montserrat py-[5vw] text-center text-black text-[3.5vw] leading-tight font-extrabold">
+        <h1 className="font-montserrat pb-[5vw] pt-[8vw] text-center text-black text-[3.5vw] leading-tight font-extrabold">
           DEMO SESSION WILL INCLUDE:
         </h1>
         <div className="flex flex-row place-self-center justify-evenly w-[80%] h-[15vw]">
@@ -65,15 +68,13 @@ function Demo() {
             </p>
           </div>
         </div>
-
-        <a
-          className="place-self-center mt-[7vw]"
-          href="https://onelink.to/hc6ta4"
+        <DemoModal show={show} onClose={() => setShow(false)} />
+        <div
+          onClick={() => setShow(true)}
+          className="hover:cursor-pointer place-self-center font-montserrat flex text-center font-bold text-white text-[1.2vw] bg-[#EF5732] items-center justify-center align-middle rounded-full px-[4vw] mt-[8vw] w-fit h-[3vw] shadow-gray-500 shadow-md"
         >
-          <div className=" font-montserrat flex text-center font-bold text-white text-[1.2vw] bg-[#EF5732] items-center justify-center align-middle rounded-full px-[4vw] mt-[2vw] w-fit h-[3vw] shadow-gray-500 shadow-md">
-            Book a Demo
-          </div>
-        </a>
+          Book a Demo
+        </div>
       </div>
       <Footer />
     </div>
