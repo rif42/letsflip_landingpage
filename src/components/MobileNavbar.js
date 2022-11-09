@@ -39,13 +39,13 @@ function MobileNavbar() {
             : "hidden"
         }
       >
-        <Link to="/Event" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
+        {/* <Link to="/Event" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">
             <Gradient dir="left-to-right" from="#FC5229" to="#AF067D">
               Event
             </Gradient>
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/" onClick={() => setPopup(popup === 1 ? 0 : 1)}>
           <div className="w-full h-[10vw] font-montserrat flex flex-col justify-center font-bold text-center text-[0.8em] hover:bg-gray-300">

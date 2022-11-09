@@ -78,7 +78,7 @@ function MasterClass() {
 
       <div className="sm:h-fit h-[170vw] w-full flex flex-col ">
         <img
-          className="absolute sm:place-content-start place-self-center sm:ml-[12vw] mt-[5vw] w-[50vw] sm:w-[20vw]"
+          className="absolute sm:place-self-start place-self-center sm:ml-[12vw] mt-[5vw] w-[50vw] sm:w-[20vw]"
           src={require("../assets/mc.png")}
           alt={"masterclassroom example"}
         />

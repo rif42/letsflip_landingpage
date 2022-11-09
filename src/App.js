@@ -34,7 +34,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Event" element={<Event />} />
+          {/* <Route path="/Event" element={<Event />} /> */}
           <Route path="/MasterClass" element={<MasterClass />} />
           <Route path="/PrivateClass" element={<PrivateClass />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />

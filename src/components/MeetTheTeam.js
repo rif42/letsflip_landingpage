@@ -4,18 +4,18 @@ import Footer from "./Footer";
 
 function MeetTheTeam() {
   return (
-    <div>
-      <div className="h-[35vw] w-full bg-no-repeat bg-center bg-pfc bg-cover flex flex-col align-middle justify-center">
+    <div className="w-full">
+      <div className="h-[90vw] sm:h-[35vw] w-full bg-no-repeat bg-center bg-pfc bg-cover flex flex-col align-middle justify-center">
         <img
-          className="absolute place-self-end ml-[-3vw] mt-[0.6vw] w-[30vw]"
+          className="absolute place-self-end w-[45vw] ml-[20vw] mt-[19.6vw] sm:ml-[-3vw] sm:mt-[0.6vw] sm:w-[30vw]"
           src={require("../assets/mtt-header-phone.png")}
           alt={"mttphone"}
         />
-        <p className="font-montserrat pb-[2vw] text-white text-[1.2vw] text-left pl-[5vw] pr-[35vw] leading-tight font-light">
+        <p className="font-montserrat pb-[2vw] text-white text-[3vw] sm:text-[1.2vw] text-left pl-[5vw] pr-[15vw] sm:pr-[35vw] leading-tight font-light">
           Let's Fl!p is a team of innovative educators from all over the world
           who have come together to create the best lab for Authentic Learning.
         </p>
-        <h1 className="align-center place-self-center text-left pl-[5vw] pr-[30vw] text-[4vw] leading-none font-extrabold text-white">
+        <h1 className="align-center place-self-center text-left pl-[5vw] pr-[20vw] sm:pr-[30vw] text-[8vw] sm:text-[4vw] leading-none font-extrabold text-white">
           Their missions are simple — Breaking the barriers for learning and
           empowering you to ask the questions that matter.
         </h1>
@@ -61,6 +61,28 @@ function MeetTheTeam() {
         />
 
         <StaffCard
+          name="Nasser"
+          role="Coach"
+          bio="Coach Nasser has always been passionate about the kids who fall behind or are mistreated. An Ex Police Officer, World Traveler, Scuba Diver and now coach, he brings his visual and emotional global experience to the learners of today. "
+          li="https://www.linkedin.com/in/nasser-ahmad-1ab260251/"
+          fb="#"
+          ig="#"
+          wa="#"
+          email="mailto:nasser@scorecampus.com"
+        />
+
+        <StaffCard
+          name="Marc"
+          role="Coach"
+          bio="Coach Marc’s ability to empathize separates him from the crowd. He has dealt with the toughest people and situations in his life professionally, financially and personally that led him to come into the world of education to help others who are going through the tough time of life; kid or adult."
+          li="https://www.linkedin.com/in/marc-g-42476b251/"
+          fb="#"
+          ig="#"
+          wa="#"
+          email="mailto:marc@scorecampus.com"
+        />
+
+        <StaffCard
           name="Rido Fisabililah"
           role="Graphic Designer"
           bio="A versatile creative with a flair of his own. Rido brings ideas to life and colors to the team with his unique perspective of design that is shown all over our social media. Rido is a highly enthusiastic individual that could create nothing to something. "
@@ -102,17 +124,6 @@ function MeetTheTeam() {
           ig="https://www.instagram.com/khoirul_bads/"
           wa="https://www.instagram.com/khoirul_bads/"
           email="mailto:khoirul@scorecampus.com"
-        />
-
-        <StaffCard
-          name="Imam Daru"
-          role="Back-end Developer"
-          bio="When there’s nothing much to do, you can find Imam working on his programming skills, reading, or even traveling. His indomitable spirit inspires him to constantly work on developing himself. Imam is also known to have a spontaneous and adventurous persona."
-          li="https://www.linkedin.com/in/imam-daru-rismi-600747212"
-          fb=""
-          ig="https://www.instagram.com/daaru.r/"
-          wa="http://wa.me/6281275433320"
-          email="mailto:imam@scorecampus.com"
         />
       </div>
 

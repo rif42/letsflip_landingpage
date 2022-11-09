@@ -11,7 +11,7 @@ function Navbar() {
       <ScrollToTop />
       <div className="Navbar-container align-middle place-content-center place-items-center flex-row flex justify-between w-full h-23 sticky top-0 bg-white z-50">
         <div className="Navbar-logo bg-center bg-no-repeat bg-navlogo bg-contain w-[15vw] h-[4.5vw] pl-[15vw]"></div>
-        <Link to="/Event">
+        {/* <Link to="/Event">
           <div
             onClick={() => {
               setNavState("Event");
@@ -26,7 +26,7 @@ function Navbar() {
               Event
             </Gradient>
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/">
           <div

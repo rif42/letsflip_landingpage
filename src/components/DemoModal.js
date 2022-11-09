@@ -29,15 +29,15 @@ export const DemoModal = (props) => {
   }
   return (
     <>
-      <div className="fixed mb-[180vw] w-full h-[49vw] place-self-center bg-black/20 text-center flex flex-col justify-center align-middle z-50">
-        <div className="flex flex-col justify-center place-self-center align-middle bg-white w-[50%] h-[45vw] rounded-3xl">
+      <div className="fixed mb-[400vw] sm:mb-[200vw] w-full h-full sm:h-[49vw] place-self-center bg-black/20 text-center flex flex-col justify-center align-middle z-50">
+        <div className="flex flex-col justify-center place-self-center align-middle bg-white w-[80vw] h-[100vw] sm:w-[50%] sm:h-[45vw] rounded-3xl">
           {/* <div className="w-[10vw] h-[10vw] onClick={props.onClose} bg-red-500"></div> */}
           <svg
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="hover:cursor-pointer absolute ml-[46%] mb-[40%] w-[3vw]"
+            className="hover:cursor-pointer absolute sm:ml-[46%] sm:mb-[40%] sm:w-[3vw] ml-[70vw] mb-[90vw] w-[8vw]"
             onClick={props.onClose}
           >
             <path
@@ -48,14 +48,14 @@ export const DemoModal = (props) => {
           </svg>
 
           <form
-            className="w-[80%] h-[80%] place-self-center flex flex-col justify-center align-middle"
+            className="sm:w-[80%] sm:h-[80%] w-[95%] h-[95%] place-self-center flex flex-col justify-center align-middle"
             action="https://event.getletsflip.com/api/v1/tnl/postform"
             method="POST"
             onSubmit={() => handleSubmit()}
           >
             <label
               htmlFor="status"
-              className="font-montserrat text-[0.9vw] text-black place-self-center pb-[1vw]"
+              className="font-montserrat text-[2.5vw] sm:text-[0.9vw] text-black place-self-center pb-[1vw]"
             >
               Status
             </label>
@@ -74,7 +74,7 @@ export const DemoModal = (props) => {
                   document.getElementById("status-error").innerHTML = "";
                 }
               }}
-              className="flex flex-col justify-center w-[80%] h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
+              className="flex flex-col justify-center w-[80%] h-[6vw] sm:h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[2.5vw] sm:text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
               id="status"
               name="status"
               placeholder="Select Your Status"
@@ -90,7 +90,7 @@ export const DemoModal = (props) => {
 
             <label
               htmlFor="childname"
-              className="font-montserrat text-[0.9vw] visited:text-[0.9vw] text-black place-self-center pt-[2vw] pb-[1vw]"
+              className="font-montserrat text-[2.5vw] visited:text-[2.5vw] sm:text-[0.9vw] text-black place-self-center pt-[2vw] pb-[1vw]"
             >
               Name
             </label>
@@ -120,17 +120,17 @@ export const DemoModal = (props) => {
               id="childname"
               name="child_name"
               placeholder="Type your name"
-              className="flex flex-col justify-center w-[80%] h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
+              className="flex flex-col justify-center w-[80%] h-[6vw] sm:h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[2.5vw] sm:text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
               required
             />
             <p
-              class="text-red-500 text-xs italic place-self-center font-montserrat text-[0.9vw] py-[0.5vw]"
+              class="text-red-500 text-xs italic place-self-center font-montserrat text-[2vw] sm:text-[0.9vw] py-[0.5vw]"
               id="name-error"
             ></p>
 
             <label
               htmlFor="email"
-              className="font-montserrat text-[0.9vw] text-black place-self-center py-[1vw]"
+              className="font-montserrat text-[2.5vw] sm:text-[0.9vw] text-black place-self-center py-[1vw]"
             >
               Email Address
             </label>
@@ -157,17 +157,17 @@ export const DemoModal = (props) => {
               type="email"
               name="parent_email"
               placeholder="Insert Email Address"
-              className="flex flex-col justify-center w-[80%] h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
+              className="flex flex-col justify-center w-[80%] h-[6vw] sm:h-[2.5vw] border-[0.1vw] border-gray-500 align-middle rounded-md px-[0.5vw] text-[2.5vw] sm:text-[0.9vw] self-center text-left font-montserrat py-[0.5vw]"
               required
             />
             <p
-              class="text-red-500 text-xs italic font-montserrat place-self-center text-[0.9vw] py-[0.5vw]"
+              class="text-red-500 text-xs italic font-montserrat place-self-center text-[2vw] sm:text-[0.9vw] py-[0.5vw]"
               id="email-error"
             ></p>
 
             <label
               htmlFor="pnumber"
-              className="font-montserrat text-[0.9vw] text-black place-self-center py-[1vw]"
+              className="font-montserrat text-[2.5vw] sm:text-[0.9vw] text-black place-self-center py-[1vw]"
             >
               Phone Number
             </label>
@@ -176,7 +176,7 @@ export const DemoModal = (props) => {
               placeholder="Enter phone number, example: +6281234567890"
               value={pnumber}
               onChange={setPnumber}
-              className="w-[31vw] text-[1.2vw] font-montserrat place-self-center"
+              className="w-[62vw] sm:w-[32vw] text-[2.5vw] sm:text-[1.2vw]  border-[0.1vw] border-gray-500 rounded-xl font-montserrat place-self-center"
               onBlur={() => {
                 if (isValidPhoneNumber(pnumber)) {
                   document.getElementById("pnumber").style.border =
@@ -192,12 +192,12 @@ export const DemoModal = (props) => {
             />
 
             <p
-              class="text-red-500 text-xs italic font-montserrat place-self-center text-[0.9vw] pb-[5vw] py-[0.5vw]"
+              class="text-red-500 text-xs italic font-montserrat place-self-center text-[2vw] sm:text-[0.9vw] pb-[5vw] py-[0.5vw]"
               id="pnumber-error"
             ></p>
 
             <button
-              className="place-self-center w-[10vw] py-[0.5vw] text-[1vw] rounded-full font-montserrat font-semibold text-white bg-orange-500"
+              className="place-self-center w-[30vw] sm:w-[10vw] py-[0.5vw] text-[3vw] sm:text-[1vw] rounded-full font-montserrat font-semibold text-white bg-orange-500"
               type="submit"
             >
               Book a Demo
