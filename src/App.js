@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/">
       <div className="App">
         <ScrollToTop />
         {windowWidth > 640 ? <Navbar /> : <MobileNavbar />}
@@ -41,7 +41,7 @@ function App() {
           <Route path="/Partner" element={<Partner />} />
           <Route path="/Demo" element={<Demo />} />
           <Route path="/TOC" element={<TOC />} />
-          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/privacy" exact element={<Privacy />} />
         </Routes>
       </div>
     </Router>
